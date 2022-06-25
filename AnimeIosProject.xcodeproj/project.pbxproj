@@ -9,12 +9,18 @@
 /* Begin PBXBuildFile section */
 		043A79B0286738C200CDCC20 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A79AE286738C200CDCC20 /* LoginViewController.swift */; };
 		043A79B1286738C200CDCC20 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043A79AF286738C200CDCC20 /* LoginViewController.xib */; };
+		043A79BD28674F2B00CDCC20 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A79BB28674F2B00CDCC20 /* HomeViewController.swift */; };
+		043A79BE28674F2B00CDCC20 /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043A79BC28674F2B00CDCC20 /* HomeViewController.xib */; };
+		043A79C02867544800CDCC20 /* AnimeData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A79BF2867544800CDCC20 /* AnimeData.swift */; };
+		043A79C628675A6F00CDCC20 /* AnimeAttribute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A79C528675A6F00CDCC20 /* AnimeAttribute.swift */; };
+		043A79C828675C0100CDCC20 /* AnimeDataWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A79C728675C0100CDCC20 /* AnimeDataWebService.swift */; };
+		043A79CA28675C4E00CDCC20 /* AnimeDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A79C928675C4E00CDCC20 /* AnimeDataService.swift */; };
+		043A79CD28676BA700CDCC20 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A79CB28676BA700CDCC20 /* HomeTableViewCell.swift */; };
+		043A79CE28676BA700CDCC20 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043A79CC28676BA700CDCC20 /* HomeTableViewCell.xib */; };
 		A34E0ADC2848A376000FFA6F /* RatpDatasetWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */; };
 		A38D70BC28474017000F908D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70BB28474017000F908D /* AppDelegate.swift */; };
 		A38D70C52847401A000F908D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38D70C42847401A000F908D /* Assets.xcassets */; };
 		A38D70C82847401A000F908D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38D70C62847401A000F908D /* LaunchScreen.storyboard */; };
-		A38D70D12847421B000F908D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70CF2847421B000F908D /* HomeViewController.swift */; };
-		A38D70D22847421B000F908D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38D70D02847421B000F908D /* HomeViewController.xib */; };
 		A38D70D528474C8C000F908D /* RatpDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70D428474C8C000F908D /* RatpDataset.swift */; };
 		A38D70D728474CF2000F908D /* RatpAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70D628474CF2000F908D /* RatpAttachment.swift */; };
 		A38D70D92847583B000F908D /* RatpMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70D82847583B000F908D /* RatpMeta.swift */; };
@@ -32,14 +38,20 @@
 /* Begin PBXFileReference section */
 		043A79AE286738C200CDCC20 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		043A79AF286738C200CDCC20 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		043A79BB28674F2B00CDCC20 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		043A79BC28674F2B00CDCC20 /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		043A79BF2867544800CDCC20 /* AnimeData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeData.swift; sourceTree = "<group>"; };
+		043A79C528675A6F00CDCC20 /* AnimeAttribute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeAttribute.swift; sourceTree = "<group>"; };
+		043A79C728675C0100CDCC20 /* AnimeDataWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDataWebService.swift; sourceTree = "<group>"; };
+		043A79C928675C4E00CDCC20 /* AnimeDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDataService.swift; sourceTree = "<group>"; };
+		043A79CB28676BA700CDCC20 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		043A79CC28676BA700CDCC20 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpDatasetWebService.swift; sourceTree = "<group>"; };
-		A38D70B828474017000F908D /* Ratp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38D70B828474017000F908D /* ios_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ios_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A38D70BB28474017000F908D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A38D70C42847401A000F908D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A38D70C72847401A000F908D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A38D70C92847401A000F908D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A38D70CF2847421B000F908D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
-		A38D70D02847421B000F908D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
 		A38D70D428474C8C000F908D /* RatpDataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpDataset.swift; sourceTree = "<group>"; };
 		A38D70D628474CF2000F908D /* RatpAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpAttachment.swift; sourceTree = "<group>"; };
 		A38D70D82847583B000F908D /* RatpMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpMeta.swift; sourceTree = "<group>"; };
@@ -78,6 +90,17 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
+		043A79B228674CA300CDCC20 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				043A79BB28674F2B00CDCC20 /* HomeViewController.swift */,
+				043A79BC28674F2B00CDCC20 /* HomeViewController.xib */,
+				043A79CB28676BA700CDCC20 /* HomeTableViewCell.swift */,
+				043A79CC28676BA700CDCC20 /* HomeTableViewCell.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
 		A38D70AF28474017000F908D = {
 			isa = PBXGroup;
 			children = (
@@ -89,7 +112,7 @@
 		A38D70B928474017000F908D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A38D70B828474017000F908D /* Ratp.app */,
+				A38D70B828474017000F908D /* ios_project.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +138,8 @@
 				A38D70D428474C8C000F908D /* RatpDataset.swift */,
 				A38D70D628474CF2000F908D /* RatpAttachment.swift */,
 				A38D70D82847583B000F908D /* RatpMeta.swift */,
+				043A79BF2867544800CDCC20 /* AnimeData.swift */,
+				043A79C528675A6F00CDCC20 /* AnimeAttribute.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -132,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				A38D70DC28475A87000F908D /* RatpDatasetService.swift */,
+				043A79C928675C4E00CDCC20 /* AnimeDataService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -157,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */,
+				043A79C728675C0100CDCC20 /* AnimeDataWebService.swift */,
 			);
 			path = Webservices;
 			sourceTree = "<group>";
@@ -164,11 +191,10 @@
 		A38D70E328475F99000F908D /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				043A79B228674CA300CDCC20 /* Home */,
 				043A79A6286737F600CDCC20 /* Login */,
 				FCA780992854D25000FD2ED0 /* Register */,
 				A38D70E428475FAA000F908D /* Datasets */,
-				A38D70CF2847421B000F908D /* HomeViewController.swift */,
-				A38D70D02847421B000F908D /* HomeViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -196,9 +222,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A38D70B728474017000F908D /* Ratp */ = {
+		A38D70B728474017000F908D /* ios_project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A38D70CC2847401A000F908D /* Build configuration list for PBXNativeTarget "Ratp" */;
+			buildConfigurationList = A38D70CC2847401A000F908D /* Build configuration list for PBXNativeTarget "ios_project" */;
 			buildPhases = (
 				A38D70B428474017000F908D /* Sources */,
 				A38D70B528474017000F908D /* Frameworks */,
@@ -208,9 +234,9 @@
 			);
 			dependencies = (
 			);
-			name = Ratp;
+			name = ios_project;
 			productName = Ratp;
-			productReference = A38D70B828474017000F908D /* Ratp.app */;
+			productReference = A38D70B828474017000F908D /* ios_project.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -229,7 +255,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A38D70B328474017000F908D /* Build configuration list for PBXProject "Ratp" */;
+			buildConfigurationList = A38D70B328474017000F908D /* Build configuration list for PBXProject "AnimeIosProject" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -244,7 +270,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A38D70B728474017000F908D /* Ratp */,
+				A38D70B728474017000F908D /* ios_project */,
 			);
 		};
 /* End PBXProject section */
@@ -258,10 +284,11 @@
 				A38D70ED28477C05000F908D /* DatasetTableViewCell.xib in Resources */,
 				A38D70C82847401A000F908D /* LaunchScreen.storyboard in Resources */,
 				A38D70C52847401A000F908D /* Assets.xcassets in Resources */,
+				043A79CE28676BA700CDCC20 /* HomeTableViewCell.xib in Resources */,
 				FCA780932854CCB700FD2ED0 /* Localizable.strings in Resources */,
-				A38D70D22847421B000F908D /* HomeViewController.xib in Resources */,
 				A38D70E82847600F000F908D /* DatasetListViewController.xib in Resources */,
 				FCA7809D2854D28100FD2ED0 /* RegisterViewController.xib in Resources */,
+				043A79BE28674F2B00CDCC20 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,15 +302,20 @@
 				043A79B0286738C200CDCC20 /* LoginViewController.swift in Sources */,
 				A34E0ADC2848A376000FFA6F /* RatpDatasetWebService.swift in Sources */,
 				A38D70E228475C01000F908D /* RatpDatasetMockService.swift in Sources */,
+				043A79C628675A6F00CDCC20 /* AnimeAttribute.swift in Sources */,
 				A38D70D92847583B000F908D /* RatpMeta.swift in Sources */,
+				043A79CA28675C4E00CDCC20 /* AnimeDataService.swift in Sources */,
 				FCA7809C2854D28100FD2ED0 /* RegisterViewController.swift in Sources */,
+				043A79C828675C0100CDCC20 /* AnimeDataWebService.swift in Sources */,
 				A38D70BC28474017000F908D /* AppDelegate.swift in Sources */,
+				043A79C02867544800CDCC20 /* AnimeData.swift in Sources */,
 				A38D70E72847600F000F908D /* DatasetListViewController.swift in Sources */,
 				A38D70DD28475A87000F908D /* RatpDatasetService.swift in Sources */,
 				A38D70EC28477C05000F908D /* DatasetTableViewCell.swift in Sources */,
 				A38D70D528474C8C000F908D /* RatpDataset.swift in Sources */,
-				A38D70D12847421B000F908D /* HomeViewController.swift in Sources */,
 				A38D70D728474CF2000F908D /* RatpAttachment.swift in Sources */,
+				043A79CD28676BA700CDCC20 /* HomeTableViewCell.swift in Sources */,
+				043A79BD28674F2B00CDCC20 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +472,7 @@
 				DEVELOPMENT_TEAM = 9NS5H7UFJA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ratp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iosProject;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -450,7 +483,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.Ratp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esgi.ios-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -470,6 +503,7 @@
 				DEVELOPMENT_TEAM = 9NS5H7UFJA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Ratp/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = iosProject;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -480,7 +514,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.Ratp;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.esgi.ios-project";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -491,7 +525,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A38D70B328474017000F908D /* Build configuration list for PBXProject "Ratp" */ = {
+		A38D70B328474017000F908D /* Build configuration list for PBXProject "AnimeIosProject" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A38D70CA2847401A000F908D /* Debug */,
@@ -500,7 +534,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A38D70CC2847401A000F908D /* Build configuration list for PBXNativeTarget "Ratp" */ = {
+		A38D70CC2847401A000F908D /* Build configuration list for PBXNativeTarget "ios_project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A38D70CD2847401A000F908D /* Debug */,

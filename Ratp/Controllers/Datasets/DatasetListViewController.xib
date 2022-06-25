@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatasetListViewController" customModule="Ratp" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DatasetListViewController" customModule="ios_project" customModuleProvider="target">
             <connections>
                 <outlet property="datasetIndicatorView" destination="Vmz-bZ-QiE" id="oei-Rt-jUd"/>
                 <outlet property="tableView" destination="Cu5-Mk-8Cl" id="cNQ-DY-6NN"/>
