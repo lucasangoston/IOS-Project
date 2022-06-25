@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegisterViewController" customModule="Ratp" customModuleProvider="target">
+            <connections>
+                <outlet property="emailTextField" destination="W2N-ld-9BD" id="zgF-MN-GbY"/>
+                <outlet property="nameTextField" destination="9VI-mg-Tp6" id="X6k-5q-4qq"/>
+                <outlet property="passwordTextField" destination="P8v-sg-9Bk" id="kcI-tk-wtB"/>
+                <outlet property="registerButton" destination="G3n-Pw-Poo" id="g2V-2F-av1"/>
+                <outlet property="signInButton" destination="zKy-hH-owt" id="UNM-dM-UFt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9VI-mg-Tp6">
+                    <rect key="frame" x="10" y="54" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="W2N-ld-9BD">
+                    <rect key="frame" x="10" y="98" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="P8v-sg-9Bk">
+                    <rect key="frame" x="10" y="142" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3n-Pw-Poo">
+                    <rect key="frame" x="168" y="206" width="78" height="31"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <color key="tintColor" systemColor="systemBackgroundColor"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Register"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zKy-hH-owt">
+                    <rect key="frame" x="127.5" y="267" width="159" height="31"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Already an account ?"/>
+                    <connections>
+                        <action selector="handleDatasets" destination="-1" eventType="touchUpInside" id="ljy-HM-Fqe"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="9VI-mg-Tp6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="191" id="5Is-b5-ilL"/>
+                <constraint firstItem="zKy-hH-owt" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="6O0-Wt-wD2"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="W2N-ld-9BD" secondAttribute="trailing" constant="10" id="C5w-Zi-h3W"/>
+                <constraint firstItem="W2N-ld-9BD" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="EmJ-7P-AeV"/>
+                <constraint firstItem="G3n-Pw-Poo" firstAttribute="top" secondItem="P8v-sg-9Bk" secondAttribute="bottom" constant="30" id="KFY-nO-r2V"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="P8v-sg-9Bk" secondAttribute="trailing" constant="10" id="Mai-7c-aih"/>
+                <constraint firstItem="9VI-mg-Tp6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="PZw-pD-hnq"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9VI-mg-Tp6" secondAttribute="trailing" constant="10" id="R7B-Fa-zMA"/>
+                <constraint firstItem="zKy-hH-owt" firstAttribute="top" secondItem="G3n-Pw-Poo" secondAttribute="bottom" constant="30" id="S1b-gx-cWz"/>
+                <constraint firstItem="G3n-Pw-Poo" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="SpX-wg-2it"/>
+                <constraint firstItem="9VI-mg-Tp6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="Wmd-La-LsY"/>
+                <constraint firstItem="P8v-sg-9Bk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="b2v-Oj-CKW"/>
+                <constraint firstItem="W2N-ld-9BD" firstAttribute="top" secondItem="9VI-mg-Tp6" secondAttribute="bottom" constant="10" id="bub-Xt-1cH"/>
+                <constraint firstItem="9VI-mg-Tp6" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="hL9-hc-sU8"/>
+                <constraint firstItem="P8v-sg-9Bk" firstAttribute="top" secondItem="W2N-ld-9BD" secondAttribute="bottom" constant="10" id="zsr-yE-BFE"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="111.83035714285714"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

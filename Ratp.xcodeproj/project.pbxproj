@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		043A79B0286738C200CDCC20 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 043A79AE286738C200CDCC20 /* LoginViewController.swift */; };
+		043A79B1286738C200CDCC20 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 043A79AF286738C200CDCC20 /* LoginViewController.xib */; };
+		A34E0ADC2848A376000FFA6F /* RatpDatasetWebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */; };
+		A38D70BC28474017000F908D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70BB28474017000F908D /* AppDelegate.swift */; };
+		A38D70C52847401A000F908D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A38D70C42847401A000F908D /* Assets.xcassets */; };
+		A38D70C82847401A000F908D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A38D70C62847401A000F908D /* LaunchScreen.storyboard */; };
+		A38D70D12847421B000F908D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70CF2847421B000F908D /* HomeViewController.swift */; };
+		A38D70D22847421B000F908D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38D70D02847421B000F908D /* HomeViewController.xib */; };
+		A38D70D528474C8C000F908D /* RatpDataset.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70D428474C8C000F908D /* RatpDataset.swift */; };
+		A38D70D728474CF2000F908D /* RatpAttachment.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70D628474CF2000F908D /* RatpAttachment.swift */; };
+		A38D70D92847583B000F908D /* RatpMeta.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70D82847583B000F908D /* RatpMeta.swift */; };
+		A38D70DD28475A87000F908D /* RatpDatasetService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70DC28475A87000F908D /* RatpDatasetService.swift */; };
+		A38D70E228475C01000F908D /* RatpDatasetMockService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70E128475C01000F908D /* RatpDatasetMockService.swift */; };
+		A38D70E72847600F000F908D /* DatasetListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70E52847600F000F908D /* DatasetListViewController.swift */; };
+		A38D70E82847600F000F908D /* DatasetListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38D70E62847600F000F908D /* DatasetListViewController.xib */; };
+		A38D70EC28477C05000F908D /* DatasetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A38D70EA28477C05000F908D /* DatasetTableViewCell.swift */; };
+		A38D70ED28477C05000F908D /* DatasetTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A38D70EB28477C05000F908D /* DatasetTableViewCell.xib */; };
+		FCA780932854CCB700FD2ED0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FCA780952854CCB700FD2ED0 /* Localizable.strings */; };
+		FCA7809C2854D28100FD2ED0 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCA7809A2854D28100FD2ED0 /* RegisterViewController.swift */; };
+		FCA7809D2854D28100FD2ED0 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FCA7809B2854D28100FD2ED0 /* RegisterViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		043A79AE286738C200CDCC20 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		043A79AF286738C200CDCC20 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpDatasetWebService.swift; sourceTree = "<group>"; };
+		A38D70B828474017000F908D /* Ratp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ratp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A38D70BB28474017000F908D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A38D70C42847401A000F908D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A38D70C72847401A000F908D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A38D70C92847401A000F908D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A38D70CF2847421B000F908D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		A38D70D02847421B000F908D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		A38D70D428474C8C000F908D /* RatpDataset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpDataset.swift; sourceTree = "<group>"; };
+		A38D70D628474CF2000F908D /* RatpAttachment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpAttachment.swift; sourceTree = "<group>"; };
+		A38D70D82847583B000F908D /* RatpMeta.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpMeta.swift; sourceTree = "<group>"; };
+		A38D70DC28475A87000F908D /* RatpDatasetService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpDatasetService.swift; sourceTree = "<group>"; };
+		A38D70E128475C01000F908D /* RatpDatasetMockService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatpDatasetMockService.swift; sourceTree = "<group>"; };
+		A38D70E52847600F000F908D /* DatasetListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetListViewController.swift; sourceTree = "<group>"; };
+		A38D70E62847600F000F908D /* DatasetListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatasetListViewController.xib; sourceTree = "<group>"; };
+		A38D70EA28477C05000F908D /* DatasetTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasetTableViewCell.swift; sourceTree = "<group>"; };
+		A38D70EB28477C05000F908D /* DatasetTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DatasetTableViewCell.xib; sourceTree = "<group>"; };
+		FCA7808B2854CB8900FD2ED0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FCA780942854CCB700FD2ED0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FCA780962854CCC500FD2ED0 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FCA780972854CD0100FD2ED0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		FCA780982854CD0200FD2ED0 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
+		FCA7809A2854D28100FD2ED0 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		FCA7809B2854D28100FD2ED0 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A38D70B528474017000F908D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		043A79A6286737F600CDCC20 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				043A79AE286738C200CDCC20 /* LoginViewController.swift */,
+				043A79AF286738C200CDCC20 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A38D70AF28474017000F908D = {
+			isa = PBXGroup;
+			children = (
+				A38D70BA28474017000F908D /* Ratp */,
+				A38D70B928474017000F908D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A38D70B928474017000F908D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A38D70B828474017000F908D /* Ratp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A38D70BA28474017000F908D /* Ratp */ = {
+			isa = PBXGroup;
+			children = (
+				A38D70E328475F99000F908D /* Controllers */,
+				A38D70DE28475B99000F908D /* Platforms */,
+				A38D70DA28475A2F000F908D /* Definitions */,
+				A38D70BB28474017000F908D /* AppDelegate.swift */,
+				A38D70C42847401A000F908D /* Assets.xcassets */,
+				A38D70C62847401A000F908D /* LaunchScreen.storyboard */,
+				A38D70C92847401A000F908D /* Info.plist */,
+				FCA780952854CCB700FD2ED0 /* Localizable.strings */,
+			);
+			path = Ratp;
+			sourceTree = "<group>";
+		};
+		A38D70D328474C79000F908D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A38D70D428474C8C000F908D /* RatpDataset.swift */,
+				A38D70D628474CF2000F908D /* RatpAttachment.swift */,
+				A38D70D82847583B000F908D /* RatpMeta.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A38D70DA28475A2F000F908D /* Definitions */ = {
+			isa = PBXGroup;
+			children = (
+				A38D70DB28475A79000F908D /* Services */,
+				A38D70D328474C79000F908D /* Models */,
+			);
+			path = Definitions;
+			sourceTree = "<group>";
+		};
+		A38D70DB28475A79000F908D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A38D70DC28475A87000F908D /* RatpDatasetService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A38D70DE28475B99000F908D /* Platforms */ = {
+			isa = PBXGroup;
+			children = (
+				A38D70E028475BA7000F908D /* Webservices */,
+				A38D70DF28475BA0000F908D /* Mocks */,
+			);
+			path = Platforms;
+			sourceTree = "<group>";
+		};
+		A38D70DF28475BA0000F908D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				A38D70E128475C01000F908D /* RatpDatasetMockService.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		A38D70E028475BA7000F908D /* Webservices */ = {
+			isa = PBXGroup;
+			children = (
+				A34E0ADB2848A376000FFA6F /* RatpDatasetWebService.swift */,
+			);
+			path = Webservices;
+			sourceTree = "<group>";
+		};
+		A38D70E328475F99000F908D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				043A79A6286737F600CDCC20 /* Login */,
+				FCA780992854D25000FD2ED0 /* Register */,
+				A38D70E428475FAA000F908D /* Datasets */,
+				A38D70CF2847421B000F908D /* HomeViewController.swift */,
+				A38D70D02847421B000F908D /* HomeViewController.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A38D70E428475FAA000F908D /* Datasets */ = {
+			isa = PBXGroup;
+			children = (
+				A38D70E52847600F000F908D /* DatasetListViewController.swift */,
+				A38D70E62847600F000F908D /* DatasetListViewController.xib */,
+				A38D70EA28477C05000F908D /* DatasetTableViewCell.swift */,
+				A38D70EB28477C05000F908D /* DatasetTableViewCell.xib */,
+			);
+			path = Datasets;
+			sourceTree = "<group>";
+		};
+		FCA780992854D25000FD2ED0 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				FCA7809A2854D28100FD2ED0 /* RegisterViewController.swift */,
+				FCA7809B2854D28100FD2ED0 /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A38D70B728474017000F908D /* Ratp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A38D70CC2847401A000F908D /* Build configuration list for PBXNativeTarget "Ratp" */;
+			buildPhases = (
+				A38D70B428474017000F908D /* Sources */,
+				A38D70B528474017000F908D /* Frameworks */,
+				A38D70B628474017000F908D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Ratp;
+			productName = Ratp;
+			productReference = A38D70B828474017000F908D /* Ratp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A38D70B028474017000F908D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					A38D70B728474017000F908D = {
+						CreatedOnToolsVersion = 13.4;
+						LastSwiftMigration = 1340;
+					};
+				};
+			};
+			buildConfigurationList = A38D70B328474017000F908D /* Build configuration list for PBXProject "Ratp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				"zh-Hans",
+			);
+			mainGroup = A38D70AF28474017000F908D;
+			productRefGroup = A38D70B928474017000F908D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A38D70B728474017000F908D /* Ratp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A38D70B628474017000F908D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043A79B1286738C200CDCC20 /* LoginViewController.xib in Resources */,
+				A38D70ED28477C05000F908D /* DatasetTableViewCell.xib in Resources */,
+				A38D70C82847401A000F908D /* LaunchScreen.storyboard in Resources */,
+				A38D70C52847401A000F908D /* Assets.xcassets in Resources */,
+				FCA780932854CCB700FD2ED0 /* Localizable.strings in Resources */,
+				A38D70D22847421B000F908D /* HomeViewController.xib in Resources */,
+				A38D70E82847600F000F908D /* DatasetListViewController.xib in Resources */,
+				FCA7809D2854D28100FD2ED0 /* RegisterViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A38D70B428474017000F908D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				043A79B0286738C200CDCC20 /* LoginViewController.swift in Sources */,
+				A34E0ADC2848A376000FFA6F /* RatpDatasetWebService.swift in Sources */,
+				A38D70E228475C01000F908D /* RatpDatasetMockService.swift in Sources */,
+				A38D70D92847583B000F908D /* RatpMeta.swift in Sources */,
+				FCA7809C2854D28100FD2ED0 /* RegisterViewController.swift in Sources */,
+				A38D70BC28474017000F908D /* AppDelegate.swift in Sources */,
+				A38D70E72847600F000F908D /* DatasetListViewController.swift in Sources */,
+				A38D70DD28475A87000F908D /* RatpDatasetService.swift in Sources */,
+				A38D70EC28477C05000F908D /* DatasetTableViewCell.swift in Sources */,
+				A38D70D528474C8C000F908D /* RatpDataset.swift in Sources */,
+				A38D70D12847421B000F908D /* HomeViewController.swift in Sources */,
+				A38D70D728474CF2000F908D /* RatpAttachment.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A38D70C62847401A000F908D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A38D70C72847401A000F908D /* Base */,
+				FCA7808B2854CB8900FD2ED0 /* fr */,
+				FCA780972854CD0100FD2ED0 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FCA780952854CCB700FD2ED0 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FCA780942854CCB700FD2ED0 /* en */,
+				FCA780962854CCC500FD2ED0 /* fr */,
+				FCA780982854CD0200FD2ED0 /* zh-Hans */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A38D70CA2847401A000F908D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A38D70CB2847401A000F908D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A38D70CD2847401A000F908D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9NS5H7UFJA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ratp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.Ratp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A38D70CE2847401A000F908D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 9NS5H7UFJA;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Ratp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.Ratp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A38D70B328474017000F908D /* Build configuration list for PBXProject "Ratp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38D70CA2847401A000F908D /* Debug */,
+				A38D70CB2847401A000F908D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A38D70CC2847401A000F908D /* Build configuration list for PBXNativeTarget "Ratp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A38D70CD2847401A000F908D /* Debug */,
+				A38D70CE2847401A000F908D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A38D70B028474017000F908D /* Project object */;
+}

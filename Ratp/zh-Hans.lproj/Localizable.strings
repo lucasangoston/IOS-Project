@@ -1,0 +1,20 @@
+/* 
+  Localizable.strings
+  Ratp
+
+  Created by Kong on 6/11/22.
+  
+*/
+"login.title" = "登录";
+"login.form.alert.title" = "Invalid form";
+"login.form.alert.close" = "Close";
+"login.form.alert.invalid" = "All fields are required";
+"login.form.alert.invalid.mail" = "The mail must contains at least 4 characters";
+"login.form.alert.invalid.password" = "The password must contains at least 6 characters";
+"login.form.login.placeholder" = "Login";
+"login.form.password.placeholder" = "Password";
+"login.form.login.button" = "login";
+
+// registerView
+"register.button" = "注册";
+"register.button.login" = "已有账号 ?";
