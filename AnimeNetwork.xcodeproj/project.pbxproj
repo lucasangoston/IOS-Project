@@ -20,6 +20,8 @@
 		0469ED25286D8E3200D498D6 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469ED23286D8E3200D498D6 /* HomeTableViewCell.xib */; };
 		0469ED4B286DB11F00D498D6 /* AnimePosterImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469ED4A286DB11F00D498D6 /* AnimePosterImage.swift */; };
 		0469ED4D286DB13200D498D6 /* AnimeCoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469ED4C286DB13200D498D6 /* AnimeCoverImage.swift */; };
+		0469ED78286FA17E00D498D6 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469ED76286FA17E00D498D6 /* HomeCollectionViewCell.swift */; };
+		0469ED79286FA17E00D498D6 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469ED77286FA17E00D498D6 /* HomeCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		0469ED23286D8E3200D498D6 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		0469ED4A286DB11F00D498D6 /* AnimePosterImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimePosterImage.swift; sourceTree = "<group>"; };
 		0469ED4C286DB13200D498D6 /* AnimeCoverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCoverImage.swift; sourceTree = "<group>"; };
+		0469ED76286FA17E00D498D6 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
+		0469ED77286FA17E00D498D6 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,8 +83,7 @@
 				04616594286D5CD1006424C9 /* Info.plist */,
 				0461659A286D5DBB006424C9 /* HomeViewController.swift */,
 				0461659B286D5DBB006424C9 /* HomeViewController.xib */,
-				0469ED22286D8E3200D498D6 /* HomeTableViewCell.swift */,
-				0469ED23286D8E3200D498D6 /* HomeTableViewCell.xib */,
+				0469ED8C2870906700D498D6 /* HomeTableViewCell */,
 			);
 			path = AnimeNetwork;
 			sourceTree = "<group>";
@@ -110,6 +113,25 @@
 				046165A5286D6020006424C9 /* AnimeNetworkWebService.swift */,
 			);
 			path = WebService;
+			sourceTree = "<group>";
+		};
+		0469ED8C2870906700D498D6 /* HomeTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0469ED8D287090D700D498D6 /* HomeCollectionViewCell */,
+				0469ED22286D8E3200D498D6 /* HomeTableViewCell.swift */,
+				0469ED23286D8E3200D498D6 /* HomeTableViewCell.xib */,
+			);
+			path = HomeTableViewCell;
+			sourceTree = "<group>";
+		};
+		0469ED8D287090D700D498D6 /* HomeCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				0469ED76286FA17E00D498D6 /* HomeCollectionViewCell.swift */,
+				0469ED77286FA17E00D498D6 /* HomeCollectionViewCell.xib */,
+			);
+			path = HomeCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +192,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0469ED79286FA17E00D498D6 /* HomeCollectionViewCell.xib in Resources */,
 				04616593286D5CD1006424C9 /* LaunchScreen.storyboard in Resources */,
 				04616590286D5CD1006424C9 /* Assets.xcassets in Resources */,
 				0469ED25286D8E3200D498D6 /* HomeTableViewCell.xib in Resources */,
@@ -189,6 +212,7 @@
 				0469ED24286D8E3200D498D6 /* HomeTableViewCell.swift in Sources */,
 				0469ED4B286DB11F00D498D6 /* AnimePosterImage.swift in Sources */,
 				0461659C286D5DBB006424C9 /* HomeViewController.swift in Sources */,
+				0469ED78286FA17E00D498D6 /* HomeCollectionViewCell.swift in Sources */,
 				046165A2286D5EA6006424C9 /* AnimeNetworkService.swift in Sources */,
 				046165A6286D6020006424C9 /* AnimeNetworkWebService.swift in Sources */,
 				0469ED21286D87FA00D498D6 /* AnimeAttributes.swift in Sources */,

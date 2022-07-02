@@ -8,21 +8,21 @@
 import Foundation
 
 class AnimeCoverImage {
-    let original: String
+    let tiny: String
     var description: String {
-        return "coverImage: \(self.original)"
+        return "coverImage: \(self.tiny)"
     }
     
-    init(original: String) {
-        self.original = original
+    init(tiny: String) {
+        self.tiny = tiny
     }
     
     convenience init?(dict: [String: Any]) {
-        guard let original = dict["original"] as? String else {
+        guard let tiny = dict["tiny"] as? String else {
             return nil
         }
         
-        self.init(original: original)
+        self.init(tiny: tiny)
         
         print(description)
     }

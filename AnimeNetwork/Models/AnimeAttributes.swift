@@ -13,9 +13,9 @@ class AnimeAttributes {
     let startDate: String
     let status: String
     let posterImage: AnimePosterImage
-    let coverIMage: AnimeCoverImage
+    let coverImage: AnimeCoverImage
     var description: String {
-        return "synopsis: \(self.synopsis), canonicalTitle: \(self.canonicalTitle), startDate: \(self.startDate), status: \(self.status), posterImage: \(self.posterImage), coverImage: \(self.coverIMage)"
+        return "synopsis: \(self.synopsis), canonicalTitle: \(self.canonicalTitle), startDate: \(self.startDate), status: \(self.status), posterImage: \(self.posterImage), coverImage: \(self.coverImage)"
     }
     
     init(synopsis: String, canonicalTitle: String, startDate: String, status: String, posterImage: AnimePosterImage, coverImage: AnimeCoverImage) {
@@ -24,7 +24,7 @@ class AnimeAttributes {
         self.startDate = startDate
         self.status = status
         self.posterImage = posterImage
-        self.coverIMage = coverImage
+        self.coverImage = coverImage
     }
     
     convenience init?(dict: [String: Any]) {
@@ -32,7 +32,7 @@ class AnimeAttributes {
               let canonicalTitle = dict["canonicalTitle"] as? String,
               let startDate = dict["startDate"] as? String,
               let status = dict["status"] as? String,
-              let posterImage = dict["coverImage"] as? [String: Any],
+              let posterImage = dict["posterImage"] as? [String: Any],
               let posterImageObject = AnimePosterImage(dict: posterImage),
               let coverImage = dict["coverImage"] as? [String: Any],
               let coverImageObject = AnimeCoverImage(dict: coverImage) else {

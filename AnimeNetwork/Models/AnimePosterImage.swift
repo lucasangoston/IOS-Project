@@ -6,25 +6,24 @@
 //
 
 import Foundation
+import UIKit
 
 class AnimePosterImage {
-    let tiny: String
+    var original: String
     var description: String {
-        return "posterImage: \(self.tiny)"
+        return "posterImage: \(self.original)"
     }
     
-    init(tiny: String) {
-        self.tiny = tiny
+    init(original: String) {
+        self.original = original
     }
     
     convenience init?(dict: [String: Any]) {
-        guard let tiny = dict["tiny"] as? String else {
+        guard let original = dict["original"] as? String else {
             return nil
         }
         
-        
-        
-        self.init(tiny: tiny)
+        self.init(original: original)
         
         print(description)
     }

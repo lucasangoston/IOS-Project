@@ -10,4 +10,6 @@ import Foundation
 
 protocol AnimeNetworkService{
     func getAnimesByTrending(completion: @escaping ([AnimeNetwork]) -> Void)
+    
+    func getAnimesByCategory(completion: @escaping ([AnimeNetwork]) -> Void)
 }

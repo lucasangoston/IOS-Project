@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeCollectionViewCell" customModule="AnimeNetwork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="348" height="271"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="348" height="271"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oVb-69-yUJ">
+                        <rect key="frame" x="0.0" y="201" width="348" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="DHq-hc-1rL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SI3-qX-7eJ">
+                        <rect key="frame" x="84" y="20" width="180" height="128"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="180" id="CGn-Mj-vo7"/>
+                            <constraint firstAttribute="height" constant="200" id="cX0-zH-CZr"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="SI3-qX-7eJ" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="hmN-VQ-f1K"/>
+                <constraint firstAttribute="bottom" secondItem="oVb-69-yUJ" secondAttribute="bottom" id="i94-gg-TbP"/>
+                <constraint firstItem="oVb-69-yUJ" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="pHp-Hx-Nzn"/>
+                <constraint firstAttribute="trailing" secondItem="oVb-69-yUJ" secondAttribute="trailing" id="xF6-K3-jAq"/>
+            </constraints>
+            <size key="customSize" width="348" height="271"/>
+            <connections>
+                <outlet property="animeImage" destination="SI3-qX-7eJ" id="22o-ZI-A3y"/>
+                <outlet property="animeTitle" destination="oVb-69-yUJ" id="7gk-Cf-WnD"/>
+            </connections>
+            <point key="canvasLocation" x="347.82608695652175" y="69.977678571428569"/>
+        </collectionViewCell>
+    </objects>
+</document>
