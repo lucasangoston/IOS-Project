@@ -8,9 +8,11 @@
 import UIKit
 
 class AnimeDetailViewController: UIViewController {
-    
-    //@IBOutlet weak var animeTitle: UILabel!
+   
     @IBOutlet weak var animeCover: UIImageView!
+    @IBOutlet weak var animeTitle: UILabel!
+    @IBOutlet weak var animeSynopsis: UILabel!
+    @IBOutlet weak var scrollView: UIScrollView!
     
     var anime: AnimeNetwork!
     
@@ -23,7 +25,11 @@ class AnimeDetailViewController: UIViewController {
     }
     
     private func setAnimeDetail(){
-        //animeTitle.text = self.anime.attributes.canonicalTitle
+        
+        animeTitle.text = self.anime.attributes.canonicalTitle
+        animeSynopsis.text = self.anime.attributes.synopsis
+        animeSynopsis.numberOfLines = 0
+        
         
         let animeImageEncoded = setImageAnime(animeImageString: self.anime.attributes.coverImage.tiny)
         
