@@ -22,6 +22,8 @@
 		0469ED4D286DB13200D498D6 /* AnimeCoverImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469ED4C286DB13200D498D6 /* AnimeCoverImage.swift */; };
 		0469ED78286FA17E00D498D6 /* HomeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469ED76286FA17E00D498D6 /* HomeCollectionViewCell.swift */; };
 		0469ED79286FA17E00D498D6 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469ED77286FA17E00D498D6 /* HomeCollectionViewCell.xib */; };
+		0469ED90287092C700D498D6 /* AnimeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469ED8E287092C700D498D6 /* AnimeDetailViewController.swift */; };
+		0469ED91287092C700D498D6 /* AnimeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469ED8F287092C700D498D6 /* AnimeDetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +44,8 @@
 		0469ED4C286DB13200D498D6 /* AnimeCoverImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeCoverImage.swift; sourceTree = "<group>"; };
 		0469ED76286FA17E00D498D6 /* HomeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCollectionViewCell.swift; sourceTree = "<group>"; };
 		0469ED77286FA17E00D498D6 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
+		0469ED8E287092C700D498D6 /* AnimeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailViewController.swift; sourceTree = "<group>"; };
+		0469ED8F287092C700D498D6 /* AnimeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimeDetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +88,8 @@
 				0461659A286D5DBB006424C9 /* HomeViewController.swift */,
 				0461659B286D5DBB006424C9 /* HomeViewController.xib */,
 				0469ED8C2870906700D498D6 /* HomeTableViewCell */,
+				0469ED8E287092C700D498D6 /* AnimeDetailViewController.swift */,
+				0469ED8F287092C700D498D6 /* AnimeDetailViewController.xib */,
 			);
 			path = AnimeNetwork;
 			sourceTree = "<group>";
@@ -196,6 +202,7 @@
 				04616593286D5CD1006424C9 /* LaunchScreen.storyboard in Resources */,
 				04616590286D5CD1006424C9 /* Assets.xcassets in Resources */,
 				0469ED25286D8E3200D498D6 /* HomeTableViewCell.xib in Resources */,
+				0469ED91287092C700D498D6 /* AnimeDetailViewController.xib in Resources */,
 				0461659D286D5DBB006424C9 /* HomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,6 +219,7 @@
 				0469ED24286D8E3200D498D6 /* HomeTableViewCell.swift in Sources */,
 				0469ED4B286DB11F00D498D6 /* AnimePosterImage.swift in Sources */,
 				0461659C286D5DBB006424C9 /* HomeViewController.swift in Sources */,
+				0469ED90287092C700D498D6 /* AnimeDetailViewController.swift in Sources */,
 				0469ED78286FA17E00D498D6 /* HomeCollectionViewCell.swift in Sources */,
 				046165A2286D5EA6006424C9 /* AnimeNetworkService.swift in Sources */,
 				046165A6286D6020006424C9 /* AnimeNetworkWebService.swift in Sources */,

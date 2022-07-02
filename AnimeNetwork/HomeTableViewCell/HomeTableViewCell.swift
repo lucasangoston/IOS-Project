@@ -12,6 +12,7 @@ class HomeTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
     @IBOutlet weak var animesCategory: UICollectionView!
     
     var models = [AnimeNetwork]()
+    weak var parent:HomeViewController?
     
     static let identifier = "HomeTableViewCell"
     
@@ -45,7 +46,14 @@ class HomeTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollection
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print(models[indexPath.row].attributes.canonicalTitle)
+        let animeDetail = AnimeDetailViewController()
+        
+        let anime = models[indexPath.row]
+        
+        
+        animeDetail.anime = anime
+       
+        parent?.navigationController!.pushViewController(animeDetail,animated:true)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
