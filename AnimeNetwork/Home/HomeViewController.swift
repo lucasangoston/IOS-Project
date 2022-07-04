@@ -11,7 +11,7 @@ import WebKit
 class HomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet var tableView: UITableView!
-    
+
     var animeNetworkService: AnimeNetworkService = AnimeNetworkWebService()
     var animesList: [[AnimeNetwork]] = []
     var animes: [AnimeNetwork] = [] {
@@ -22,7 +22,7 @@ class HomeViewController: UIViewController, UITableViewDelegate, UITableViewData
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+      
         self.tableView.register(HomeTableViewCell.nib(), forCellReuseIdentifier: HomeTableViewCell.identifier)
         
         self.animeNetworkService.getAnimesByTrending { animes in

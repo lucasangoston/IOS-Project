@@ -24,6 +24,10 @@
 		0469ED79286FA17E00D498D6 /* HomeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469ED77286FA17E00D498D6 /* HomeCollectionViewCell.xib */; };
 		0469ED90287092C700D498D6 /* AnimeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469ED8E287092C700D498D6 /* AnimeDetailViewController.swift */; };
 		0469ED91287092C700D498D6 /* AnimeDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469ED8F287092C700D498D6 /* AnimeDetailViewController.xib */; };
+		0469ED972872D24B00D498D6 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469ED952872D24B00D498D6 /* SearchViewController.swift */; };
+		0469ED982872D24B00D498D6 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469ED962872D24B00D498D6 /* SearchViewController.xib */; };
+		0469ED9C2872D7DD00D498D6 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469ED9A2872D7DD00D498D6 /* SearchTableViewCell.swift */; };
+		0469ED9D2872D7DD00D498D6 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469ED9B2872D7DD00D498D6 /* SearchTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,10 @@
 		0469ED77286FA17E00D498D6 /* HomeCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeCollectionViewCell.xib; sourceTree = "<group>"; };
 		0469ED8E287092C700D498D6 /* AnimeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimeDetailViewController.swift; sourceTree = "<group>"; };
 		0469ED8F287092C700D498D6 /* AnimeDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AnimeDetailViewController.xib; sourceTree = "<group>"; };
+		0469ED952872D24B00D498D6 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		0469ED962872D24B00D498D6 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
+		0469ED9A2872D7DD00D498D6 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
+		0469ED9B2872D7DD00D498D6 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,11 +93,9 @@
 				0461658F286D5CD1006424C9 /* Assets.xcassets */,
 				04616591286D5CD1006424C9 /* LaunchScreen.storyboard */,
 				04616594286D5CD1006424C9 /* Info.plist */,
-				0461659A286D5DBB006424C9 /* HomeViewController.swift */,
-				0461659B286D5DBB006424C9 /* HomeViewController.xib */,
-				0469ED8C2870906700D498D6 /* HomeTableViewCell */,
-				0469ED8E287092C700D498D6 /* AnimeDetailViewController.swift */,
-				0469ED8F287092C700D498D6 /* AnimeDetailViewController.xib */,
+				0469ED942871B4D700D498D6 /* AnimeDetail */,
+				0469ED932871B46900D498D6 /* Home */,
+				0469ED922871B44800D498D6 /* Search */,
 			);
 			path = AnimeNetwork;
 			sourceTree = "<group>";
@@ -138,6 +144,36 @@
 				0469ED77286FA17E00D498D6 /* HomeCollectionViewCell.xib */,
 			);
 			path = HomeCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		0469ED922871B44800D498D6 /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				0469ED952872D24B00D498D6 /* SearchViewController.swift */,
+				0469ED962872D24B00D498D6 /* SearchViewController.xib */,
+				0469ED9A2872D7DD00D498D6 /* SearchTableViewCell.swift */,
+				0469ED9B2872D7DD00D498D6 /* SearchTableViewCell.xib */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		0469ED932871B46900D498D6 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0469ED8C2870906700D498D6 /* HomeTableViewCell */,
+				0461659A286D5DBB006424C9 /* HomeViewController.swift */,
+				0461659B286D5DBB006424C9 /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0469ED942871B4D700D498D6 /* AnimeDetail */ = {
+			isa = PBXGroup;
+			children = (
+				0469ED8E287092C700D498D6 /* AnimeDetailViewController.swift */,
+				0469ED8F287092C700D498D6 /* AnimeDetailViewController.xib */,
+			);
+			path = AnimeDetail;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,11 +235,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				0469ED79286FA17E00D498D6 /* HomeCollectionViewCell.xib in Resources */,
+				0469ED9D2872D7DD00D498D6 /* SearchTableViewCell.xib in Resources */,
 				04616593286D5CD1006424C9 /* LaunchScreen.storyboard in Resources */,
 				04616590286D5CD1006424C9 /* Assets.xcassets in Resources */,
 				0469ED25286D8E3200D498D6 /* HomeTableViewCell.xib in Resources */,
 				0469ED91287092C700D498D6 /* AnimeDetailViewController.xib in Resources */,
 				0461659D286D5DBB006424C9 /* HomeViewController.xib in Resources */,
+				0469ED982872D24B00D498D6 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,7 +258,9 @@
 				0469ED4B286DB11F00D498D6 /* AnimePosterImage.swift in Sources */,
 				0461659C286D5DBB006424C9 /* HomeViewController.swift in Sources */,
 				0469ED90287092C700D498D6 /* AnimeDetailViewController.swift in Sources */,
+				0469ED972872D24B00D498D6 /* SearchViewController.swift in Sources */,
 				0469ED78286FA17E00D498D6 /* HomeCollectionViewCell.swift in Sources */,
+				0469ED9C2872D7DD00D498D6 /* SearchTableViewCell.swift in Sources */,
 				046165A2286D5EA6006424C9 /* AnimeNetworkService.swift in Sources */,
 				046165A6286D6020006424C9 /* AnimeNetworkWebService.swift in Sources */,
 				0469ED21286D87FA00D498D6 /* AnimeAttributes.swift in Sources */,
