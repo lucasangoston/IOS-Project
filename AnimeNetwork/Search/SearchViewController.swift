@@ -7,10 +7,15 @@
 
 import UIKit
 
-class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UISearchBarDelegate {
+
 
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var searchTableView: UITableView!
+    
+    private let pageLimit = 8
+    private var offset = 0
+    private var searchAnime = ""
     
     var animeNetworkService: AnimeNetworkService = AnimeNetworkWebService()
     var animes: [AnimeNetwork] = [] {
@@ -21,15 +26,16 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.title = "Rechercher"
         self.searchTableView.register(SearchTableViewCell.nib(), forCellReuseIdentifier: SearchTableViewCell.identifier)
         
-        self.animeNetworkService.getAnimes { animes in
-            self.animes = animes
-        }
-
+        self.animeNetworkService.getAnimes(completion: { animes in
+            self.animes.append(contentsOf: animes)
+        }, pageLimit: String(self.pageLimit), offset: String(self.offset), mySearch: searchAnime)
+        
         self.searchTableView.delegate = self
         self.searchTableView.dataSource = self
+        self.searchBar.delegate = self
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -58,16 +64,32 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
        
         self.navigationController?.pushViewController(animeDetail, animated: true)
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    public func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath){
+        let lastIndex = self.animes.count - 1
+        self.offset += self.animes.count
+        
+        if indexPath.row == lastIndex {
+            self.animeNetworkService.getAnimes(completion: { animes in
+                self.animes.append(contentsOf: animes)
+            }, pageLimit: String(self.pageLimit), offset: String(self.offset), mySearch: self.searchAnime)
+            
+            self.searchTableView.reloadData()
+        }
     }
-    */
+    
+    func searchBarSearchButtonClicked( _ searchBar: UISearchBar)
+        {
 
+            self.searchAnime = searchBar.text!
+            self.offset = 0
+            
+            if(searchBar.text == ""){
+            } else{
+                self.animeNetworkService.getAnimes(completion: { animes in
+                    self.animes = animes
+                }, pageLimit: String(self.pageLimit), offset: String(self.offset), mySearch: "&filter[text]='\(self.searchAnime)'")
+
+            }
+        }
 }

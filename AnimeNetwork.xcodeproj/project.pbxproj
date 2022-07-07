@@ -28,6 +28,13 @@
 		0469ED982872D24B00D498D6 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469ED962872D24B00D498D6 /* SearchViewController.xib */; };
 		0469ED9C2872D7DD00D498D6 /* SearchTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469ED9A2872D7DD00D498D6 /* SearchTableViewCell.swift */; };
 		0469ED9D2872D7DD00D498D6 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469ED9B2872D7DD00D498D6 /* SearchTableViewCell.xib */; };
+		0469EDA82876B11600D498D6 /* CategoryAnime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469EDA72876B11600D498D6 /* CategoryAnime.swift */; };
+		0469EDAE2876EC0F00D498D6 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469EDAC2876EC0F00D498D6 /* FavoriteViewController.swift */; };
+		0469EDAF2876EC0F00D498D6 /* FavoriteViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469EDAD2876EC0F00D498D6 /* FavoriteViewController.xib */; };
+		0469EDB22876F23400D498D6 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469EDB02876F23400D498D6 /* NavigationViewController.swift */; };
+		0469EDB32876F23400D498D6 /* NavigationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469EDB12876F23400D498D6 /* NavigationViewController.xib */; };
+		0469EDED28771D5000D498D6 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0469EDEB28771D5000D498D6 /* ChatViewController.swift */; };
+		0469EDEE28771D5000D498D6 /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0469EDEC28771D5000D498D6 /* ChatViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +61,13 @@
 		0469ED962872D24B00D498D6 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
 		0469ED9A2872D7DD00D498D6 /* SearchTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableViewCell.swift; sourceTree = "<group>"; };
 		0469ED9B2872D7DD00D498D6 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		0469EDA72876B11600D498D6 /* CategoryAnime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryAnime.swift; sourceTree = "<group>"; };
+		0469EDAC2876EC0F00D498D6 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
+		0469EDAD2876EC0F00D498D6 /* FavoriteViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FavoriteViewController.xib; sourceTree = "<group>"; };
+		0469EDB02876F23400D498D6 /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		0469EDB12876F23400D498D6 /* NavigationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationViewController.xib; sourceTree = "<group>"; };
+		0469EDEB28771D5000D498D6 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		0469EDEC28771D5000D498D6 /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,9 +107,12 @@
 				0461658F286D5CD1006424C9 /* Assets.xcassets */,
 				04616591286D5CD1006424C9 /* LaunchScreen.storyboard */,
 				04616594286D5CD1006424C9 /* Info.plist */,
+				0469EDEA28771CEC00D498D6 /* Chat */,
+				0469EDAB2876EBE500D498D6 /* Favorite */,
 				0469ED942871B4D700D498D6 /* AnimeDetail */,
 				0469ED932871B46900D498D6 /* Home */,
 				0469ED922871B44800D498D6 /* Search */,
+				0469ED9E28739CDE00D498D6 /* Navigation */,
 			);
 			path = AnimeNetwork;
 			sourceTree = "<group>";
@@ -107,6 +124,7 @@
 				0469ED20286D87FA00D498D6 /* AnimeAttributes.swift */,
 				0469ED4A286DB11F00D498D6 /* AnimePosterImage.swift */,
 				0469ED4C286DB13200D498D6 /* AnimeCoverImage.swift */,
+				0469EDA72876B11600D498D6 /* CategoryAnime.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -176,6 +194,33 @@
 			path = AnimeDetail;
 			sourceTree = "<group>";
 		};
+		0469ED9E28739CDE00D498D6 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				0469EDB02876F23400D498D6 /* NavigationViewController.swift */,
+				0469EDB12876F23400D498D6 /* NavigationViewController.xib */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		0469EDAB2876EBE500D498D6 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				0469EDAC2876EC0F00D498D6 /* FavoriteViewController.swift */,
+				0469EDAD2876EC0F00D498D6 /* FavoriteViewController.xib */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		0469EDEA28771CEC00D498D6 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				0469EDEB28771D5000D498D6 /* ChatViewController.swift */,
+				0469EDEC28771D5000D498D6 /* ChatViewController.xib */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -239,8 +284,11 @@
 				04616593286D5CD1006424C9 /* LaunchScreen.storyboard in Resources */,
 				04616590286D5CD1006424C9 /* Assets.xcassets in Resources */,
 				0469ED25286D8E3200D498D6 /* HomeTableViewCell.xib in Resources */,
+				0469EDEE28771D5000D498D6 /* ChatViewController.xib in Resources */,
 				0469ED91287092C700D498D6 /* AnimeDetailViewController.xib in Resources */,
 				0461659D286D5DBB006424C9 /* HomeViewController.xib in Resources */,
+				0469EDAF2876EC0F00D498D6 /* FavoriteViewController.xib in Resources */,
+				0469EDB32876F23400D498D6 /* NavigationViewController.xib in Resources */,
 				0469ED982872D24B00D498D6 /* SearchViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,12 +306,16 @@
 				0469ED4B286DB11F00D498D6 /* AnimePosterImage.swift in Sources */,
 				0461659C286D5DBB006424C9 /* HomeViewController.swift in Sources */,
 				0469ED90287092C700D498D6 /* AnimeDetailViewController.swift in Sources */,
+				0469EDAE2876EC0F00D498D6 /* FavoriteViewController.swift in Sources */,
 				0469ED972872D24B00D498D6 /* SearchViewController.swift in Sources */,
+				0469EDB22876F23400D498D6 /* NavigationViewController.swift in Sources */,
 				0469ED78286FA17E00D498D6 /* HomeCollectionViewCell.swift in Sources */,
 				0469ED9C2872D7DD00D498D6 /* SearchTableViewCell.swift in Sources */,
+				0469EDED28771D5000D498D6 /* ChatViewController.swift in Sources */,
 				046165A2286D5EA6006424C9 /* AnimeNetworkService.swift in Sources */,
 				046165A6286D6020006424C9 /* AnimeNetworkWebService.swift in Sources */,
 				0469ED21286D87FA00D498D6 /* AnimeAttributes.swift in Sources */,
+				0469EDA82876B11600D498D6 /* CategoryAnime.swift in Sources */,
 				0469ED4D286DB13200D498D6 /* AnimeCoverImage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

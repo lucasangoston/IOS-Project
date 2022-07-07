@@ -30,7 +30,5 @@ class AnimeNetwork {
         }
       
         self.init(id: id, type: type, attributes: attributesObject)
-        
-        print(description)
     }
 }

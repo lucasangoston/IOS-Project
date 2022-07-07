@@ -30,7 +30,6 @@ class AnimeDetailViewController: UIViewController {
         animeSynopsis.text = self.anime.attributes.synopsis
         animeSynopsis.numberOfLines = 0
         
-        
         let animeImageEncoded = setImageAnime(animeImageString: self.anime.attributes.coverImage.tiny)
         
         animeCover.image = animeImageEncoded
@@ -53,15 +52,4 @@ class AnimeDetailViewController: UIViewController {
         
         return animeImage
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }

@@ -11,8 +11,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchViewController" customModule="AnimeNetwork" customModuleProvider="target">
             <connections>
-                <outlet property="searchBar" destination="3pb-VP-HCK" id="G6e-z0-j9e"/>
-                <outlet property="searchTableView" destination="V3m-FZ-uX8" id="v4U-gV-vU3"/>
+                <outlet property="searchBar" destination="21Q-1y-SIa" id="WLf-Zb-NoN"/>
+                <outlet property="searchTableView" destination="YLY-Qs-HeH" id="ExP-sn-cP9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,25 +21,25 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="3pb-VP-HCK">
-                    <rect key="frame" x="0.0" y="64" width="414" height="51"/>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="21Q-1y-SIa">
+                    <rect key="frame" x="0.0" y="54" width="414" height="51"/>
                     <textInputTraits key="textInputTraits"/>
                 </searchBar>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="V3m-FZ-uX8">
-                    <rect key="frame" x="0.0" y="125" width="414" height="737"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="YLY-Qs-HeH">
+                    <rect key="frame" x="0.0" y="115" width="414" height="747"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
-            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="3pb-VP-HCK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="20" id="2hl-Fm-JYG"/>
-                <constraint firstItem="V3m-FZ-uX8" firstAttribute="top" secondItem="3pb-VP-HCK" secondAttribute="bottom" constant="10" id="56w-0f-dD5"/>
-                <constraint firstItem="V3m-FZ-uX8" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="6P0-Zs-1Jm"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="V3m-FZ-uX8" secondAttribute="bottom" id="7a0-6v-X1V"/>
-                <constraint firstItem="3pb-VP-HCK" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Gsw-ky-M5r"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="V3m-FZ-uX8" secondAttribute="trailing" id="OJT-hI-IxU"/>
-                <constraint firstItem="3pb-VP-HCK" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="TB9-1D-21y"/>
+                <constraint firstItem="21Q-1y-SIa" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="3Mj-mV-i7l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="YLY-Qs-HeH" secondAttribute="bottom" id="NLM-sf-Mkt"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YLY-Qs-HeH" secondAttribute="trailing" id="SDZ-bR-nzl"/>
+                <constraint firstItem="21Q-1y-SIa" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="10" id="mpC-cA-S1u"/>
+                <constraint firstItem="21Q-1y-SIa" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="ste-hF-WPd"/>
+                <constraint firstItem="YLY-Qs-HeH" firstAttribute="top" secondItem="21Q-1y-SIa" secondAttribute="bottom" constant="10" id="um0-Bu-7qb"/>
+                <constraint firstItem="YLY-Qs-HeH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="yLX-zV-zGT"/>
             </constraints>
             <point key="canvasLocation" x="139" y="76"/>
         </view>
