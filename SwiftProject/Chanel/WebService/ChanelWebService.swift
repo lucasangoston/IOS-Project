@@ -140,4 +140,82 @@ class ChanelWebService: ChanelService {
         }
         task.resume()
     }
+    
+    func createChanel(chanelName: String, chanelDescription: String, chanelTheme: String) {
+        guard let url = URL(string: "http://localhost:3000/chanel/createChanel") else {
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "POST"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        
+        let idCurentUser = UserDefaults.standard.string(forKey: "id")
+        
+        guard let idUser = idCurentUser else {
+            return
+        }
+        
+        let usernameCurentUser = UserDefaults.standard.string(forKey: "username")
+        
+        guard let username = usernameCurentUser else {
+            return
+        }
+        
+        let body: [String: Any] = [
+            "chanelName": chanelName,
+            "Theme": chanelTheme,
+            "description": chanelDescription,
+            "idUser": idUser,
+            "username": username
+        ]
+        
+        request.httpBody = try? JSONSerialization.data(withJSONObject: body, options: .fragmentsAllowed)
+
+        let task = URLSession.shared.dataTask(with: request){
+            data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            
+            do{
+                let response = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                
+                print(response)
+                
+            } catch {
+                print(error)
+            }
+        }
+        task.resume()
+    }
+    
+    func deleteChanel(idChanel: Int){
+        let url = "http://localhost:3000/chanel/delete/" + String(idChanel)
+        
+        guard let url = URL(string: url) else {
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "DELETE"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        let task = URLSession.shared.dataTask(with: request){
+            data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            
+            do{
+                let response = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
+                
+            } catch {
+                print(error)
+            }
+        }
+        task.resume()
+    }
 }

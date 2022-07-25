@@ -33,7 +33,6 @@ class SearchTableViewCell: UITableViewCell {
         self.model = model
         self.isFavorite = isFavorite
         
-        
         self.setTitleAnime()
         self.setFavoriteButton()
         

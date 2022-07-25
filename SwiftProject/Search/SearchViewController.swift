@@ -26,6 +26,12 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    let myRefreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
+        return refreshControl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = NSLocalizedString("search.title", comment: "")
@@ -42,6 +48,24 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         self.searchTableView.delegate = self
         self.searchTableView.dataSource = self
         self.searchBar.delegate = self
+        
+        self.searchTableView.refreshControl = myRefreshControl
+    }
+    
+    @objc private func refresh(sender: UIRefreshControl){
+        animes.removeAll()
+        favorites.removeAll()
+        self.offset = 0
+        
+        self.animeNetworkService.getAnimes(completion: { animes in
+            self.animes.append(contentsOf: animes)
+        }, pageLimit: String(self.pageLimit), offset: String(self.offset), mySearch: searchAnime)
+        
+        self.favoriteService.getFavoritesByIdUser{ favorites in
+            self.favorites = favorites
+        }
+        self.searchTableView.reloadData()
+        sender.endRefreshing()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -91,6 +115,10 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
             self.searchTableView.reloadData()
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
     }
     
     func searchBarSearchButtonClicked( _ searchBar: UISearchBar)

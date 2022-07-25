@@ -26,6 +26,12 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
     var isJoined: Bool!
     var chanel: Chanel!
     
+    let myRefreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
+        return refreshControl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -44,6 +50,19 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
         
         self.tableViewComment.delegate = self
         self.tableViewComment.dataSource = self
+        
+        self.tableViewComment.refreshControl = myRefreshControl
+    }
+    
+    @objc private func refresh(sender: UIRefreshControl){
+        comments.removeAll()
+        
+        self.commentService.getCommentsByIdChanel(completion: { comments in
+            self.comments = comments
+        }, idChanel: chanel.idChanel)
+        
+        self.tableViewComment.reloadData()
+        sender.endRefreshing()
     }
     
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
@@ -73,6 +92,16 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
         cell.configure(with: comments[indexPath.row])
         
         return cell
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        comments.removeAll()
+        
+        self.commentService.getCommentsByIdChanel(completion: { comments in
+            self.comments = comments
+        }, idChanel: chanel.idChanel)
+        
+        self.tableViewComment.reloadData()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

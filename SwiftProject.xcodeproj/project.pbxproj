@@ -55,6 +55,9 @@
 		04A61D6C288CC83400DA6775 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D6B288CC83400DA6775 /* Comment.swift */; };
 		04A61D6E288ED5A500DA6775 /* UserChanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D6D288ED5A500DA6775 /* UserChanel.swift */; };
 		FC71A235288F35A7002B6D12 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC71A237288F35A7002B6D12 /* Localizable.strings */; };
+		04A61D72288F241800DA6775 /* CreateChanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D70288F241800DA6775 /* CreateChanelViewController.swift */; };
+		04A61D76288F31C800DA6775 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D74288F31C800DA6775 /* ProfileTableViewCell.swift */; };
+		04A61D77288F31C800DA6775 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A61D75288F31C800DA6775 /* ProfileTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,6 +115,9 @@
 		FC71A239288F3642002B6D12 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		FC71A23A288F3642002B6D12 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FC71A23C288F3A61002B6D12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		04A61D70288F241800DA6775 /* CreateChanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChanelViewController.swift; sourceTree = "<group>"; };
+		04A61D74288F31C800DA6775 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		04A61D75288F31C800DA6775 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -227,6 +233,7 @@
 		04A61D0328872CD900DA6775 /* Chanel */ = {
 			isa = PBXGroup;
 			children = (
+				04A61D6F288F23EA00DA6775 /* Create */,
 				04A61D1328872FBF00DA6775 /* Service */,
 				04A61D1228872FB600DA6775 /* WebService */,
 				04A61D1128872FAD00DA6775 /* Models */,
@@ -339,6 +346,8 @@
 			isa = PBXGroup;
 			children = (
 				04A61D4B288C3E1800DA6775 /* ProfileViewController.swift */,
+				04A61D74288F31C800DA6775 /* ProfileTableViewCell.swift */,
+				04A61D75288F31C800DA6775 /* ProfileTableViewCell.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -413,6 +422,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		04A61D6F288F23EA00DA6775 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				04A61D70288F241800DA6775 /* CreateChanelViewController.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -482,6 +499,7 @@
 				04A61D292889DCD800DA6775 /* ChanelTableViewCell.xib in Resources */,
 				04A61D57288CA36700DA6775 /* FavoriteListTableViewCell.xib in Resources */,
 				04A61D01288721DB00DA6775 /* AnimeDetailViewController.xib in Resources */,
+				04A61D77288F31C800DA6775 /* ProfileTableViewCell.xib in Resources */,
 				04A61CED28871FE300DA6775 /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -502,6 +520,7 @@
 				04A61D172887300700DA6775 /* ChanelWebService.swift in Sources */,
 				04A61D6C288CC83400DA6775 /* Comment.swift in Sources */,
 				04A61CFA2887214A00DA6775 /* AnimePosterImage.swift in Sources */,
+				04A61D76288F31C800DA6775 /* ProfileTableViewCell.swift in Sources */,
 				04A61D46288B369500DA6775 /* FavoriteWebService.swift in Sources */,
 				04A61CFC2887215B00DA6775 /* AnimeCoverImage.swift in Sources */,
 				04A61CD228871BFD00DA6775 /* ViewController.swift in Sources */,
@@ -509,6 +528,7 @@
 				04A61CCE28871BFD00DA6775 /* AppDelegate.swift in Sources */,
 				04A61D56288CA36700DA6775 /* FavoriteListTableViewCell.swift in Sources */,
 				04A61D38288A07A400DA6775 /* LoginViewController.swift in Sources */,
+				04A61D72288F241800DA6775 /* CreateChanelViewController.swift in Sources */,
 				04A61D68288CC7ED00DA6775 /* ChanelDetailTableViewCell.swift in Sources */,
 				04A61D52288CA2FC00DA6775 /* FavoriteListViewController.swift in Sources */,
 				04A61CE828871FA500DA6775 /* SearchViewController.swift in Sources */,
