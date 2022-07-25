@@ -93,6 +93,10 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+    }
+    
     func searchBarSearchButtonClicked( _ searchBar: UISearchBar)
     {
         self.searchAnime = searchBar.text!

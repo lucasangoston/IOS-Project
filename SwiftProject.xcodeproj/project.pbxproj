@@ -54,6 +54,7 @@
 		04A61D69288CC7ED00DA6775 /* ChanelDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A61D67288CC7ED00DA6775 /* ChanelDetailTableViewCell.xib */; };
 		04A61D6C288CC83400DA6775 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D6B288CC83400DA6775 /* Comment.swift */; };
 		04A61D6E288ED5A500DA6775 /* UserChanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D6D288ED5A500DA6775 /* UserChanel.swift */; };
+		04A61D72288F241800DA6775 /* CreateChanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D70288F241800DA6775 /* CreateChanelViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,7 @@
 		04A61D67288CC7ED00DA6775 /* ChanelDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChanelDetailTableViewCell.xib; sourceTree = "<group>"; };
 		04A61D6B288CC83400DA6775 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		04A61D6D288ED5A500DA6775 /* UserChanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChanel.swift; sourceTree = "<group>"; };
+		04A61D70288F241800DA6775 /* CreateChanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChanelViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -220,6 +222,7 @@
 		04A61D0328872CD900DA6775 /* Chanel */ = {
 			isa = PBXGroup;
 			children = (
+				04A61D6F288F23EA00DA6775 /* Create */,
 				04A61D1328872FBF00DA6775 /* Service */,
 				04A61D1228872FB600DA6775 /* WebService */,
 				04A61D1128872FAD00DA6775 /* Models */,
@@ -406,6 +409,14 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		04A61D6F288F23EA00DA6775 /* Create */ = {
+			isa = PBXGroup;
+			children = (
+				04A61D70288F241800DA6775 /* CreateChanelViewController.swift */,
+			);
+			path = Create;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -500,6 +511,7 @@
 				04A61CCE28871BFD00DA6775 /* AppDelegate.swift in Sources */,
 				04A61D56288CA36700DA6775 /* FavoriteListTableViewCell.swift in Sources */,
 				04A61D38288A07A400DA6775 /* LoginViewController.swift in Sources */,
+				04A61D72288F241800DA6775 /* CreateChanelViewController.swift in Sources */,
 				04A61D68288CC7ED00DA6775 /* ChanelDetailTableViewCell.swift in Sources */,
 				04A61D52288CA2FC00DA6775 /* FavoriteListViewController.swift in Sources */,
 				04A61CE828871FA500DA6775 /* SearchViewController.swift in Sources */,
