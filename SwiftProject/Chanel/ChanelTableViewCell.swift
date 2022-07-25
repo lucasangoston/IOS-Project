@@ -62,6 +62,7 @@ class ChanelTableViewCell: UITableViewCell {
     }
     
     private func setChanelName(){
+        self.chanelName.numberOfLines = 0
         self.chanelName.text = model.chanelName
     }
     
@@ -73,6 +74,7 @@ class ChanelTableViewCell: UITableViewCell {
     }
     
     private func setChanelDescription(){
+        self.chanelDescription.numberOfLines = 0
         self.chanelDescription.text = model.description
     }
 }

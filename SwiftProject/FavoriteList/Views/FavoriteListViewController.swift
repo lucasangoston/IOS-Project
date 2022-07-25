@@ -19,6 +19,12 @@ class FavoriteListViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
     
+    let myRefreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
+        return refreshControl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -32,6 +38,20 @@ class FavoriteListViewController: UIViewController, UITableViewDelegate, UITable
         
         self.tableViewFavoriteList.delegate = self
         self.tableViewFavoriteList.dataSource = self
+        
+        self.tableViewFavoriteList.refreshControl = myRefreshControl
+    }
+    
+    @objc private func refresh(sender: UIRefreshControl){
+        favorites.removeAll()
+        favoriteList.removeAll()
+        
+        self.favoriteService.getFavoritesByIdUser{ favorites in
+            self.getIdAnimeFavorite(favorites: favorites)
+        }
+        
+        self.tableViewFavoriteList.reloadData()
+        sender.endRefreshing()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -55,16 +75,17 @@ class FavoriteListViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         let animeTitle = favoriteList[indexPath.row].attributes.canonicalTitle
         
-        let idFavorite = self.getIdFavorite(favorites: self.favorites, idAnime: self.favoriteList[indexPath.row].id)
+        
+        print(favorites)
         
         if editingStyle == .delete {
           let alert = UIAlertController(title: "Suppression", message: "Voulez-vous vraiment supprimé \(animeTitle) de votre liste ?", preferredStyle: .alert)
           alert.addAction(UIAlertAction(title: NSLocalizedString("Non", comment: "Default action"), style: .cancel, handler: nil ))
           
-          alert.addAction(UIAlertAction(title: NSLocalizedString("Oui", comment: ""), style: .destructive, handler: {action in
+          alert.addAction(UIAlertAction(title: NSLocalizedString("Oui", comment: ""), style: .destructive, handler: { action in
               
               
-              self.favoriteService.deleteFavorite(idFavorite: idFavorite)
+              self.favoriteService.deleteFavorite(idFavorite: 1)
           }))
           
           self.present(alert, animated: true, completion: nil)
@@ -97,6 +118,7 @@ class FavoriteListViewController: UIViewController, UITableViewDelegate, UITable
     
     func getIdFavorite(favorites: [Favorite], idAnime: String) -> Int {
         let idCurentUser = UserDefaults.standard.string(forKey: "id")
+        
         
         guard let idUser = idCurentUser else {
             return 0

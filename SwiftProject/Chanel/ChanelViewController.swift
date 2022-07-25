@@ -19,6 +19,12 @@ class ChanelViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
     }
     
+    let myRefreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
+        return refreshControl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,6 +42,24 @@ class ChanelViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
         self.tableViewChanel.delegate = self
         self.tableViewChanel.dataSource = self
+        
+        self.tableViewChanel.refreshControl = myRefreshControl
+    }
+    
+    @objc private func refresh(sender: UIRefreshControl){
+        chanels.removeAll()
+        chanelsByUser.removeAll()
+        
+        self.chanelService.getChanels{ chanels in
+            self.chanels = chanels
+        }
+        
+        self.chanelService.getChanelsByIdUser { chanels in
+            self.chanelsByUser = chanels
+        }
+        
+        self.tableViewChanel.reloadData()
+        sender.endRefreshing()
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell

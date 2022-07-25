@@ -55,6 +55,8 @@
 		04A61D6C288CC83400DA6775 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D6B288CC83400DA6775 /* Comment.swift */; };
 		04A61D6E288ED5A500DA6775 /* UserChanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D6D288ED5A500DA6775 /* UserChanel.swift */; };
 		04A61D72288F241800DA6775 /* CreateChanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D70288F241800DA6775 /* CreateChanelViewController.swift */; };
+		04A61D76288F31C800DA6775 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D74288F31C800DA6775 /* ProfileTableViewCell.swift */; };
+		04A61D77288F31C800DA6775 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A61D75288F31C800DA6775 /* ProfileTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -108,6 +110,8 @@
 		04A61D6B288CC83400DA6775 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		04A61D6D288ED5A500DA6775 /* UserChanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChanel.swift; sourceTree = "<group>"; };
 		04A61D70288F241800DA6775 /* CreateChanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChanelViewController.swift; sourceTree = "<group>"; };
+		04A61D74288F31C800DA6775 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
+		04A61D75288F31C800DA6775 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -335,6 +339,8 @@
 			isa = PBXGroup;
 			children = (
 				04A61D4B288C3E1800DA6775 /* ProfileViewController.swift */,
+				04A61D74288F31C800DA6775 /* ProfileTableViewCell.swift */,
+				04A61D75288F31C800DA6775 /* ProfileTableViewCell.xib */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -484,6 +490,7 @@
 				04A61D292889DCD800DA6775 /* ChanelTableViewCell.xib in Resources */,
 				04A61D57288CA36700DA6775 /* FavoriteListTableViewCell.xib in Resources */,
 				04A61D01288721DB00DA6775 /* AnimeDetailViewController.xib in Resources */,
+				04A61D77288F31C800DA6775 /* ProfileTableViewCell.xib in Resources */,
 				04A61CED28871FE300DA6775 /* SearchTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +511,7 @@
 				04A61D172887300700DA6775 /* ChanelWebService.swift in Sources */,
 				04A61D6C288CC83400DA6775 /* Comment.swift in Sources */,
 				04A61CFA2887214A00DA6775 /* AnimePosterImage.swift in Sources */,
+				04A61D76288F31C800DA6775 /* ProfileTableViewCell.swift in Sources */,
 				04A61D46288B369500DA6775 /* FavoriteWebService.swift in Sources */,
 				04A61CFC2887215B00DA6775 /* AnimeCoverImage.swift in Sources */,
 				04A61CD228871BFD00DA6775 /* ViewController.swift in Sources */,
