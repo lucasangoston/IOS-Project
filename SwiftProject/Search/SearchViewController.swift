@@ -28,7 +28,7 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Rechercher"
+        self.title = NSLocalizedString("search.title", comment: "")
         self.searchTableView.register(SearchTableViewCell.nib(), forCellReuseIdentifier: SearchTableViewCell.identifier)
         
         self.animeNetworkService.getAnimes(completion: { animes in

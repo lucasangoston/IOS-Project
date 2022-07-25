@@ -21,42 +21,45 @@
                         <rect key="frame" x="10" y="0.0" width="560" height="275"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lni-SD-FhG">
-                                <rect key="frame" x="0.0" y="0.0" width="560" height="65"/>
+                                <rect key="frame" x="0.0" y="0.0" width="560" height="80"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eT7-56-e64">
-                                        <rect key="frame" x="482" y="18.5" width="63" height="28.5"/>
+                                        <rect key="frame" x="482" y="60" width="63" height="28.5"/>
                                         <color key="backgroundColor" systemColor="systemGroupedBackgroundColor"/>
                                         <color key="tintColor" systemColor="labelColor"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="tinted" subtitle="Theme"/>
+                                        <buttonConfiguration key="configuration" style="tinted" subtitle="Theme">
+                                            <backgroundConfiguration key="background"/>
+                                        </buttonConfiguration>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nom du groupe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gfZ-aH-664">
-                                        <rect key="frame" x="15" y="20.5" width="144.5" height="24"/>
+                                        <rect key="frame" x="15" y="28" width="144.5" height="24"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemCyanColor"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstItem="gfZ-aH-664" firstAttribute="leading" secondItem="lni-SD-FhG" secondAttribute="leading" constant="15" id="5EM-ti-rUs"/>
                                     <constraint firstItem="eT7-56-e64" firstAttribute="centerY" secondItem="lni-SD-FhG" secondAttribute="centerY" id="9ZX-RV-Nuf"/>
-                                    <constraint firstAttribute="height" constant="65" id="PRr-2T-bEG"/>
+                                    <constraint firstAttribute="height" constant="80" id="PRr-2T-bEG"/>
+                                    <constraint firstItem="eT7-56-e64" firstAttribute="top" secondItem="lni-SD-FhG" secondAttribute="top" constant="60" id="Zpd-xT-jHi"/>
                                     <constraint firstAttribute="trailing" secondItem="eT7-56-e64" secondAttribute="trailing" constant="15" id="mGb-0I-tfG"/>
                                     <constraint firstItem="gfZ-aH-664" firstAttribute="centerY" secondItem="lni-SD-FhG" secondAttribute="centerY" id="ne3-kB-n6F"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1g-0q-UqC">
-                                <rect key="frame" x="15" y="65" width="545" height="190"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u1g-0q-UqC">
+                                <rect key="frame" x="15" y="102" width="545" height="180"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemCyanColor"/>
+                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                         <constraints>
                             <constraint firstItem="lni-SD-FhG" firstAttribute="top" secondItem="oVZ-JM-icM" secondAttribute="top" id="9vM-v8-c6f"/>
-                            <constraint firstItem="u1g-0q-UqC" firstAttribute="top" secondItem="lni-SD-FhG" secondAttribute="bottom" id="JWn-zd-8Rg"/>
+                            <constraint firstItem="u1g-0q-UqC" firstAttribute="top" secondItem="lni-SD-FhG" secondAttribute="bottom" constant="40" id="JWn-zd-8Rg"/>
                             <constraint firstAttribute="bottom" secondItem="u1g-0q-UqC" secondAttribute="bottom" constant="20" id="MUu-HT-nhb"/>
                             <constraint firstAttribute="trailing" secondItem="u1g-0q-UqC" secondAttribute="trailing" id="siD-bT-Y7f"/>
                             <constraint firstAttribute="trailing" secondItem="lni-SD-FhG" secondAttribute="trailing" id="tqo-Af-kVc"/>
@@ -87,8 +90,8 @@
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
-        <systemColor name="systemCyanColor">
-            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemGroupedBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
