@@ -7,16 +7,74 @@
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+    
+    
 
     @IBOutlet weak var tableViewChanel: UITableView!
     @IBOutlet weak var username: UILabel!
     
+    var chanelService: ChanelService = ChanelWebService()
+    var chanelsByUser: [UserChanel] = []
+    var chanels: [Chanel] = [] {
+        didSet {
+            self.tableViewChanel.reloadData() // recharge la tableview
+        }
+    }
+    
+    let myRefreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        refreshControl.addTarget(self, action: #selector(refresh(sender:)), for: .valueChanged)
+        return refreshControl
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tableViewChanel.register(ProfileTableViewCell.nib(), forCellReuseIdentifier: ProfileTableViewCell.identifier)
+        
         self.setUser()
-        // Do any additional setup after loading the view.
+        
+        self.chanelService.getChanels{ chanels in
+            self.chanels = chanels
+        }
+        
+        self.chanelService.getChanelsByIdUser { chanels in
+            self.chanelsByUser.append(contentsOf: chanels)
+        }
+        
+        self.tableViewChanel.delegate = self
+        self.tableViewChanel.dataSource = self
+        
+        self.tableViewChanel.refreshControl = myRefreshControl
+    }
+    
+    @objc private func refresh(sender: UIRefreshControl){
+        chanels.removeAll()
+        chanelsByUser.removeAll()
+        
+        self.chanelService.getChanels{ chanels in
+            self.chanels = chanels
+        }
+        
+        self.chanelService.getChanelsByIdUser { chanels in
+            self.chanelsByUser = chanels
+        }
+        
+        self.tableViewChanel.reloadData()
+        sender.endRefreshing()
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return chanels.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: ProfileTableViewCell.identifier, for: indexPath) as! ProfileTableViewCell
+        
+        //cell.configure(with: chanels[indexPath.row])
+        
+        return cell
     }
 
 
@@ -48,6 +106,17 @@ class ProfileViewController: UIViewController {
         // This is to get the SceneDelegate object from your view controller
         // then call the change root view controller function to change to main tab bar
         (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(loginViewController)
+    }
+    
+    private func doesChanelIsJoin(chanels: [UserChanel], idChanel: Int) -> Bool {
+        for chanel in chanels {
+            print(chanel.idChanel)
+            print(idChanel)
+            if chanel.idChanel == idChanel{
+                return true
+            }
+        }
+        return false
     }
 
 }
