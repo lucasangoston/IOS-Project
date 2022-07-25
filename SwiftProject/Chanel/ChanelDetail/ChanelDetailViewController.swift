@@ -22,6 +22,8 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
         }
     }
     var commentService: CommentService = CommentWebService()
+    var chanelService: ChanelService = ChanelWebService()
+    var isJoined: Bool!
     var chanel: Chanel!
     
     override func viewDidLoad() {
@@ -33,12 +35,34 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
         
         self.tableViewComment.register(ChanelDetailTableViewCell.nib(), forCellReuseIdentifier: ChanelDetailTableViewCell.identifier)
         
+        self.setchanelJoinButton()
+        
         self.commentService.getCommentsByIdChanel(completion: { comments in
             self.comments = comments
         }, idChanel: chanel.idChanel)
         
         self.tableViewComment.delegate = self
         self.tableViewComment.dataSource = self
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let comment = comments[indexPath.row]
+              
+        let idCurentUser = UserDefaults.standard.string(forKey: "id")
+        
+        guard let idUser = idCurentUser else {
+            return
+        }
+        
+        if Int(idUser) == comment.idUser {
+            self.commentService.deleteComment(idComment: comment.idComment)
+        } else {
+            let alert = UIAlertController(title: "Heu..", message: "vous essayez de supprimer un commentaire que vous n'avez pas écris.. La liberté d'expression est importe sur ce serveur", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
@@ -67,14 +91,28 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
             return
         }
         
-        if content.isEmpty || self.contentComment.textColor == UIColor.lightGray {
-                let alert = UIAlertController(title: "Vous n'avez pas de contenu à partager", message: "Raconter ce qui vous passe par la tête !", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
-                NSLog("The \"OK\" alert occured.")
-                }))
-                self.present(alert, animated: true, completion: nil)
+        if self.isJoined {
+            if content.isEmpty || self.contentComment.textColor == UIColor.lightGray {
+                    let alert = UIAlertController(title: "Vous n'avez pas de contenu à partager", message: "Raconter ce qui vous passe par la tête !", preferredStyle: .alert)
+                    alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                    NSLog("The \"OK\" alert occured.")
+                    }))
+                    self.present(alert, animated: true, completion: nil)
+            } else {
+                print(chanel.idChanel)
+                commentService.createComment(idChanel: chanel.idChanel, content: content)
+            }
         } else {
-            commentService.createComment(idChanel: chanel.idChanel, content: content)
+            let usernameCurentUser = UserDefaults.standard.string(forKey: "username")
+            
+            guard let username = usernameCurentUser else {
+                return
+            }
+            let alert = UIAlertController(title: "Salut \(username) !", message: "Tu dois d'abord rejoindre le serveur si tu souhaite partager avec la communauté.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
@@ -84,5 +122,27 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
         self.chanelName.font = UIFont(name:"HelveticaNeue-Bold", size: 19.0)
     }
     
+    private func setchanelJoinButton(){
+        if self.isJoined {
+            var config = UIButton.Configuration.tinted()
+            config.subtitle = "Rejoint(e)"
+            self.chanelJoinButton.configuration = config
+        } else {
+            var config = UIButton.Configuration.tinted()
+            config.subtitle = "Rejoindre"
+            self.chanelJoinButton.configuration = config
+        }
+    }
     
+    @IBAction func handleJoinChanel(){
+        if  !self.isJoined {
+            self.setchanelJoinButton()
+            self.isJoined = true
+            self.chanelService.joinChanel(idChanel: chanel.idChanel)
+        } else {
+            self.setchanelJoinButton()
+            self.isJoined = false
+            self.chanelService.quitChanel(idChanel: chanel.idChanel)
+        }
+    }
 }

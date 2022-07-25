@@ -61,7 +61,7 @@ class CommentWebService : CommentService {
         }
         
         let body: [String: Any?] = [
-            "idChanel": 1,
+            "idChanel": idChanel,
             "idUser": idUser,
             "username": nameUser,
             "content": content,
@@ -80,6 +80,34 @@ class CommentWebService : CommentService {
                 let response = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
                 
                 print(response)
+                
+            } catch {
+                print(error)
+            }
+        }
+        task.resume()
+    }
+    
+    func deleteComment(idComment: Int){
+        let url = "http://localhost:3000/comment/delete/" + String(idComment)
+        
+        guard let url = URL(string: url) else {
+            return
+        }
+        
+        var request = URLRequest(url: url)
+        
+        request.httpMethod = "DELETE"
+        request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+
+        let task = URLSession.shared.dataTask(with: request){
+            data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            
+            do{
+                let response = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
                 
             } catch {
                 print(error)

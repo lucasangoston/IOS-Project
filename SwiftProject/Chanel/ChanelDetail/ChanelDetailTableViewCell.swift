@@ -27,6 +27,7 @@ class ChanelDetailTableViewCell: UITableViewCell {
     public func configure(with model: Comment){
         self.model = model
         
+        self.setColorView()
         self.setUsername()
         self.setDate()
         self.setContent()
@@ -42,6 +43,22 @@ class ChanelDetailTableViewCell: UITableViewCell {
     
     private func setContent(){
         self.content.text = model.content
+    }
+    
+    private func setColorView(){
+        let idCurentUser = UserDefaults.standard.string(forKey: "id")
+        
+        guard let idUser = idCurentUser else {
+            return
+        }
+        
+        if model.idUser == Int(idUser) {
+            self.headerComment.backgroundColor = UIColor.systemGreen
+            self.comment.backgroundColor = UIColor.systemGreen
+        } else {
+            self.headerComment.backgroundColor = UIColor.systemGray
+            self.comment.backgroundColor = UIColor.systemGray
+        }
     }
     
     

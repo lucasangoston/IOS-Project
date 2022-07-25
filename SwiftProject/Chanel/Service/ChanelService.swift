@@ -9,4 +9,10 @@ import Foundation
 
 protocol ChanelService{
     func getChanels(completion: @escaping ([Chanel]) -> Void)
+    
+    func getChanelsByIdUser(completion: @escaping ([UserChanel]) -> Void)
+    
+    func joinChanel(idChanel: Int)
+    
+    func quitChanel(idChanel: Int)
 }

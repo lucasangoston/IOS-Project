@@ -53,6 +53,7 @@
 		04A61D68288CC7ED00DA6775 /* ChanelDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D66288CC7ED00DA6775 /* ChanelDetailTableViewCell.swift */; };
 		04A61D69288CC7ED00DA6775 /* ChanelDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A61D67288CC7ED00DA6775 /* ChanelDetailTableViewCell.xib */; };
 		04A61D6C288CC83400DA6775 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D6B288CC83400DA6775 /* Comment.swift */; };
+		04A61D6E288ED5A500DA6775 /* UserChanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D6D288ED5A500DA6775 /* UserChanel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +105,7 @@
 		04A61D66288CC7ED00DA6775 /* ChanelDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanelDetailTableViewCell.swift; sourceTree = "<group>"; };
 		04A61D67288CC7ED00DA6775 /* ChanelDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChanelDetailTableViewCell.xib; sourceTree = "<group>"; };
 		04A61D6B288CC83400DA6775 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		04A61D6D288ED5A500DA6775 /* UserChanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChanel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,7 +211,6 @@
 			isa = PBXGroup;
 			children = (
 				04A61D47288B834E00DA6775 /* Models */,
-				04A61D42288B35EF00DA6775 /* Views */,
 				04A61D41288B35E900DA6775 /* Services */,
 				04A61D40288B35E100DA6775 /* WebServices */,
 			);
@@ -245,6 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				04A61D182887304700DA6775 /* Chanel.swift */,
+				04A61D6D288ED5A500DA6775 /* UserChanel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -316,13 +318,6 @@
 				04A61D43288B361C00DA6775 /* FavoriteService.swift */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		04A61D42288B35EF00DA6775 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		04A61D47288B834E00DA6775 /* Models */ = {
@@ -513,6 +508,7 @@
 				04A61D3C288AC58100DA6775 /* RegisterViewController.swift in Sources */,
 				04A61D63288CBF2A00DA6775 /* CommentService.swift in Sources */,
 				04A61D3F288ACAA300DA6775 /* RegisterWebService.swift in Sources */,
+				04A61D6E288ED5A500DA6775 /* UserChanel.swift in Sources */,
 				04A61D35288A072C00DA6775 /* LoginWebService.swift in Sources */,
 				04A61D4D288C3E1800DA6775 /* ProfileViewController.swift in Sources */,
 				04A61CF3288720DF00DA6775 /* AnimeNetworkService.swift in Sources */,

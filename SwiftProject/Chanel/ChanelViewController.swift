@@ -11,7 +11,8 @@ class ChanelViewController: UIViewController, UITableViewDelegate, UITableViewDa
 
     @IBOutlet weak var tableViewChanel: UITableView!
     
-    var cahnelService: ChanelService = ChanelWebService()
+    var chanelService: ChanelService = ChanelWebService()
+    var chanelsByUser: [UserChanel] = []
     var chanels: [Chanel] = [] {
         didSet {
             self.tableViewChanel.reloadData() // recharge la tableview
@@ -25,10 +26,14 @@ class ChanelViewController: UIViewController, UITableViewDelegate, UITableViewDa
         
         self.tableViewChanel.register(ChanelTableViewCell.nib(), forCellReuseIdentifier: ChanelTableViewCell.identifier)
         
-        self.cahnelService.getChanels{ chanels in
+        self.chanelService.getChanels{ chanels in
             self.chanels = chanels
         }
         
+        self.chanelService.getChanelsByIdUser { chanels in
+            self.chanelsByUser.append(contentsOf: chanels)
+        }
+            
         self.tableViewChanel.delegate = self
         self.tableViewChanel.dataSource = self
     }
@@ -50,10 +55,22 @@ class ChanelViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let chanelDetail = ChanelDetailViewController()
                 
         let chanel = self.chanels[indexPath.row]
+        let isJoined = doesChanelIsJoin(chanels: self.chanelsByUser, idChanel: chanel.idChanel)
         
         chanelDetail.chanel = chanel
+        chanelDetail.isJoined = isJoined
        
         self.navigationController!.pushViewController(chanelDetail,animated:true)
     }
-
+    
+    private func doesChanelIsJoin(chanels: [UserChanel], idChanel: Int) -> Bool {
+        for chanel in chanels {
+            print(chanel.idChanel)
+            print(idChanel)
+            if chanel.idChanel == idChanel{
+                return true
+            }
+        }
+        return false
+    }
 }
