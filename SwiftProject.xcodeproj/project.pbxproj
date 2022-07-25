@@ -54,6 +54,7 @@
 		04A61D69288CC7ED00DA6775 /* ChanelDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A61D67288CC7ED00DA6775 /* ChanelDetailTableViewCell.xib */; };
 		04A61D6C288CC83400DA6775 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D6B288CC83400DA6775 /* Comment.swift */; };
 		04A61D6E288ED5A500DA6775 /* UserChanel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D6D288ED5A500DA6775 /* UserChanel.swift */; };
+		FC71A235288F35A7002B6D12 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC71A237288F35A7002B6D12 /* Localizable.strings */; };
 		04A61D72288F241800DA6775 /* CreateChanelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D70288F241800DA6775 /* CreateChanelViewController.swift */; };
 		04A61D76288F31C800DA6775 /* ProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A61D74288F31C800DA6775 /* ProfileTableViewCell.swift */; };
 		04A61D77288F31C800DA6775 /* ProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 04A61D75288F31C800DA6775 /* ProfileTableViewCell.xib */; };
@@ -109,6 +110,11 @@
 		04A61D67288CC7ED00DA6775 /* ChanelDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChanelDetailTableViewCell.xib; sourceTree = "<group>"; };
 		04A61D6B288CC83400DA6775 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		04A61D6D288ED5A500DA6775 /* UserChanel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserChanel.swift; sourceTree = "<group>"; };
+		FC71A236288F35A7002B6D12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FC71A238288F3642002B6D12 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		FC71A239288F3642002B6D12 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		FC71A23A288F3642002B6D12 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		FC71A23C288F3A61002B6D12 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
 		04A61D70288F241800DA6775 /* CreateChanelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChanelViewController.swift; sourceTree = "<group>"; };
 		04A61D74288F31C800DA6775 /* ProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileTableViewCell.swift; sourceTree = "<group>"; };
 		04A61D75288F31C800DA6775 /* ProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileTableViewCell.xib; sourceTree = "<group>"; };
@@ -162,6 +168,7 @@
 				04A61CD628871BFE00DA6775 /* Assets.xcassets */,
 				04A61CD828871BFE00DA6775 /* LaunchScreen.storyboard */,
 				04A61CDB28871BFE00DA6775 /* Info.plist */,
+				FC71A237288F35A7002B6D12 /* Localizable.strings */,
 			);
 			path = SwiftProject;
 			sourceTree = "<group>";
@@ -465,6 +472,7 @@
 			knownRegions = (
 				en,
 				Base,
+				fr,
 			);
 			mainGroup = 04A61CC128871BFD00DA6775;
 			productRefGroup = 04A61CCB28871BFD00DA6775 /* Products */;
@@ -483,6 +491,7 @@
 			files = (
 				04A61CDA28871BFE00DA6775 /* LaunchScreen.storyboard in Resources */,
 				04A61CD728871BFE00DA6775 /* Assets.xcassets in Resources */,
+				FC71A235288F35A7002B6D12 /* Localizable.strings in Resources */,
 				04A61D69288CC7ED00DA6775 /* ChanelDetailTableViewCell.xib in Resources */,
 				04A61CE928871FA500DA6775 /* SearchViewController.xib in Resources */,
 				04A61CD528871BFD00DA6775 /* Main.storyboard in Resources */,
@@ -551,6 +560,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				04A61CD428871BFD00DA6775 /* Base */,
+				FC71A238288F3642002B6D12 /* fr */,
+				FC71A23C288F3A61002B6D12 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -559,8 +570,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				04A61CD928871BFE00DA6775 /* Base */,
+				FC71A239288F3642002B6D12 /* fr */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FC71A237288F35A7002B6D12 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FC71A236288F35A7002B6D12 /* en */,
+				FC71A23A288F3642002B6D12 /* fr */,
+			);
+			name = Localizable.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -570,6 +591,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -616,7 +638,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -630,6 +652,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -670,7 +693,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -687,21 +710,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 792WRWDFHZ;
+				DEVELOPMENT_TEAM = 9NS5H7UFJA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = esgi.com.SwiftProject;
+				PRODUCT_BUNDLE_IDENTIFIER = esgi.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -716,21 +738,20 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 792WRWDFHZ;
+				DEVELOPMENT_TEAM = 9NS5H7UFJA;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = SwiftProject/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = esgi.com.SwiftProject;
+				PRODUCT_BUNDLE_IDENTIFIER = esgi.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

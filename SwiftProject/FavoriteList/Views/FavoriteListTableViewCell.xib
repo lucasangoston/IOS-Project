@@ -17,17 +17,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="452" height="274"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4t-un-kUf">
-                        <rect key="frame" x="20" y="11" width="412" height="242"/>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R4t-un-kUf">
+                        <rect key="frame" x="20" y="11" width="412" height="260"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="xgw-Ll-IKD">
-                                <rect key="frame" x="0.0" y="0.0" width="170" height="242"/>
+                                <rect key="frame" x="0.0" y="0.0" width="170" height="252"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="170" id="Y9P-Ti-jO2"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IIO-j7-4Xm">
-                                <rect key="frame" x="195" y="109.5" width="212" height="23"/>
+                                <rect key="frame" x="190" y="114.5" width="217" height="23"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -37,7 +37,7 @@
                         <constraints>
                             <constraint firstItem="xgw-Ll-IKD" firstAttribute="leading" secondItem="R4t-un-kUf" secondAttribute="leading" id="5Nl-Q0-SZ2"/>
                             <constraint firstItem="xgw-Ll-IKD" firstAttribute="top" secondItem="R4t-un-kUf" secondAttribute="top" id="UHH-Pl-QBz"/>
-                            <constraint firstItem="IIO-j7-4Xm" firstAttribute="leading" secondItem="xgw-Ll-IKD" secondAttribute="trailing" constant="25" id="V1W-FZ-r9T"/>
+                            <constraint firstItem="IIO-j7-4Xm" firstAttribute="leading" secondItem="xgw-Ll-IKD" secondAttribute="trailing" constant="20" id="V1W-FZ-r9T"/>
                             <constraint firstAttribute="trailing" secondItem="IIO-j7-4Xm" secondAttribute="trailing" constant="5" id="XTa-CC-wbi"/>
                             <constraint firstAttribute="bottom" secondItem="xgw-Ll-IKD" secondAttribute="bottom" id="gNy-KW-12m"/>
                             <constraint firstItem="IIO-j7-4Xm" firstAttribute="centerY" secondItem="R4t-un-kUf" secondAttribute="centerY" id="oeq-K3-0mo"/>
@@ -45,7 +45,7 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstAttribute="bottomMargin" secondItem="R4t-un-kUf" secondAttribute="bottom" constant="10" id="6tK-uI-HHd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="R4t-un-kUf" secondAttribute="bottom" id="6tK-uI-HHd"/>
                     <constraint firstItem="R4t-un-kUf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="Xel-GZ-wr9"/>
                     <constraint firstItem="R4t-un-kUf" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="dgI-Cr-cAA"/>
                     <constraint firstAttribute="trailingMargin" secondItem="R4t-un-kUf" secondAttribute="trailing" id="thD-jk-Bp4"/>

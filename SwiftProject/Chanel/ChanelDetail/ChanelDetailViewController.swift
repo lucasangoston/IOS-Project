@@ -38,6 +38,7 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
         self.tableViewComment.separatorColor = UIColor.white;
 
         self.setChanelDetail()
+        self.chanelJoinButton.layer.cornerRadius = 8.0
         
         self.tableViewComment.register(ChanelDetailTableViewCell.nib(), forCellReuseIdentifier: ChanelDetailTableViewCell.identifier)
         
@@ -154,11 +155,11 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
     private func setchanelJoinButton(){
         if self.isJoined {
             var config = UIButton.Configuration.tinted()
-            config.subtitle = "Rejoint(e)"
+            config.subtitle = NSLocalizedString("chanelDetail.joined", comment: "")
             self.chanelJoinButton.configuration = config
         } else {
             var config = UIButton.Configuration.tinted()
-            config.subtitle = "Rejoindre"
+            config.subtitle = NSLocalizedString("chanelDetail.join", comment: "")
             self.chanelJoinButton.configuration = config
         }
     }

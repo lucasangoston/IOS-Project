@@ -18,6 +18,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = NSLocalizedString("login.title", comment: "")
+        self.mail.placeholder = NSLocalizedString("login.form.email.placeholder", comment: "")
+        self.password.placeholder = NSLocalizedString("login.form.password.placeholder", comment: "")
+        self.login.setTitle(NSLocalizedString("login.form.login.button", comment: ""), for: .normal)
 
         login.isEnabled = false;
         let textfields : [UITextField] = [mail, password]

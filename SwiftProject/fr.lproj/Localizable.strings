@@ -1,0 +1,35 @@
+/* 
+  Localizable.strings
+  Ratp
+
+  Created by Kong on 6/11/22.
+  
+*/
+// loginView
+"login.title" = "Connexion";
+"login.form.email.placeholder" = "Mail";
+"login.form.password.placeholder" = "Mot de passe";
+"login.form.login.button" = "Connexion";
+"login.register.button" = "Vous n'avez pas de compte ?";
+
+
+"login.form.alert.title" = "Forme non valide";
+"login.form.alert.close" = "Fermer";
+"login.form.alert.invalid" = "Tous les champs sont requis";
+"login.form.alert.invalid.email" = "Le login doit contenir au moins 4 caractères";
+"login.form.alert.invalid.password" = "Le mot de passe doit contenir au moins 6 caractères";
+
+// registerView
+"register.title" = "Inscription";
+"register.form.name.placeholder" = "Nom";
+"register.form.email.placeholder" = "Mail";
+"register.form.password.placeholder" = "Mot de passe";
+"register.button" = "Inscription";
+"register.button.login" = "Déjà un compte ?";
+
+//SearchView
+"search.title" = "Rechercher";
+
+//ChanelDetailView
+"chanelDetail.join" = "Rejoindre";
+"chanelDetail.joined" = "Rejoin(t)";
