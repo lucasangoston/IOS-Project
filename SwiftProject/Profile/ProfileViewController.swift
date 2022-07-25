@@ -9,6 +9,7 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet weak var tableViewChanel: UITableView!
     @IBOutlet weak var username: UILabel!
     
     override func viewDidLoad() {

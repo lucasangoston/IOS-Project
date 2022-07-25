@@ -420,13 +420,13 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="name user" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BXl-ho-70c">
-                                <rect key="frame" x="167" y="238" width="80" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <rect key="frame" x="163" y="238" width="88" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3K-kq-OXJ">
-                                <rect key="frame" x="247" y="233" width="45" height="31"/>
+                                <rect key="frame" x="251" y="233" width="45" height="31"/>
                                 <color key="tintColor" systemColor="systemRedColor"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="power.circle.fill" catalog="system" title=""/>
@@ -434,20 +434,37 @@
                                     <action selector="logOutUser" destination="9pV-yv-hO3" eventType="touchUpInside" id="HBm-0r-pvC"/>
                                 </connections>
                             </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="p7t-Cd-hht">
+                                <rect key="frame" x="0.0" y="344.5" width="414" height="468.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mes communautés :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyv-hi-J02">
+                                <rect key="frame" x="20" y="309" width="197.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mGu-xL-ztU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="p7t-Cd-hht" firstAttribute="top" secondItem="lyv-hi-J02" secondAttribute="bottom" constant="10" id="6ZO-Kc-IxR"/>
                             <constraint firstItem="s3K-kq-OXJ" firstAttribute="top" secondItem="b3Y-Jz-Z9m" secondAttribute="bottom" constant="15" id="AfO-01-cjg"/>
                             <constraint firstItem="b3Y-Jz-Z9m" firstAttribute="centerX" secondItem="wJb-np-SJa" secondAttribute="centerX" id="BZ9-nZ-vq8"/>
+                            <constraint firstItem="lyv-hi-J02" firstAttribute="top" secondItem="BXl-ho-70c" secondAttribute="bottom" constant="50" id="OTb-bA-ebt"/>
+                            <constraint firstItem="mGu-xL-ztU" firstAttribute="trailing" secondItem="p7t-Cd-hht" secondAttribute="trailing" id="Q9f-K4-OKN"/>
                             <constraint firstItem="b3Y-Jz-Z9m" firstAttribute="top" secondItem="mGu-xL-ztU" secondAttribute="top" constant="10" id="Qhk-OL-rYd"/>
+                            <constraint firstItem="mGu-xL-ztU" firstAttribute="bottom" secondItem="p7t-Cd-hht" secondAttribute="bottom" id="RHZ-kb-5Xm"/>
                             <constraint firstItem="BXl-ho-70c" firstAttribute="centerX" secondItem="wJb-np-SJa" secondAttribute="centerX" id="SHj-fW-Kad"/>
                             <constraint firstItem="BXl-ho-70c" firstAttribute="top" secondItem="b3Y-Jz-Z9m" secondAttribute="bottom" constant="20" id="fo8-yd-P9x"/>
                             <constraint firstItem="s3K-kq-OXJ" firstAttribute="leading" secondItem="BXl-ho-70c" secondAttribute="trailing" id="lXY-E9-Ry7"/>
+                            <constraint firstItem="lyv-hi-J02" firstAttribute="leading" secondItem="mGu-xL-ztU" secondAttribute="leading" constant="20" id="twv-sJ-00S"/>
+                            <constraint firstItem="p7t-Cd-hht" firstAttribute="leading" secondItem="mGu-xL-ztU" secondAttribute="leading" id="wQx-3a-bmd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Profil" id="EBP-DA-m1M"/>
                     <connections>
+                        <outlet property="tableViewChanel" destination="p7t-Cd-hht" id="t4R-h5-Prg"/>
                         <outlet property="username" destination="BXl-ho-70c" id="JRG-Cj-0u2"/>
                     </connections>
                 </viewController>

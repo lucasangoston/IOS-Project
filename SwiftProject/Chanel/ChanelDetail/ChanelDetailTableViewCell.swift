@@ -56,8 +56,8 @@ class ChanelDetailTableViewCell: UITableViewCell {
             self.headerComment.backgroundColor = UIColor.systemGreen
             self.comment.backgroundColor = UIColor.systemGreen
         } else {
-            self.headerComment.backgroundColor = UIColor.systemGray
-            self.comment.backgroundColor = UIColor.systemGray
+            self.headerComment.backgroundColor = UIColor.systemGray2
+            self.comment.backgroundColor = UIColor.systemGray2
         }
     }
     
