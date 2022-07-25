@@ -35,6 +35,8 @@ class CreateChanelViewController: UIViewController {
         NSLog("The \"OK\" alert occured.")
         }))
         self.present(alert, animated: true, completion: nil)
+        
+        self.presentationController?.dismissalTransitionWillBegin()
     }
     
     @objc func textFieldDidChange(_ textField: UITextField) {

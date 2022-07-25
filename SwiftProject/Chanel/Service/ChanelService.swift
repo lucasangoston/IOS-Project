@@ -17,4 +17,6 @@ protocol ChanelService{
     func quitChanel(idChanel: Int)
     
     func createChanel(chanelName: String, chanelDescription: String, chanelTheme: String)
+    
+    func deleteChanel(idChanel: Int)
 }

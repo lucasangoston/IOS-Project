@@ -30,15 +30,11 @@ class LoginViewController: UIViewController {
     @IBAction func handleLoginButton(){
     
         loginService.login(mail: mail.text!, password: password.text!)
-        let mail = UserDefaults.standard.string(forKey: "mail")
          
-        if let user = mail {
+        if UserDefaults.standard.object(forKey: "mail") != nil {
             
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let mainTabBarController = storyboard.instantiateViewController(identifier: "MainTabBarController")
-            
-            // This is to get the SceneDelegate object from your view controller
-            // then call the change root view controller function to change to main tab bar
             
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
         } else {

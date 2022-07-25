@@ -39,9 +39,26 @@ class ChanelTableViewCell: UITableViewCell {
     public func configure(with model: Chanel){
         self.model = model
         
+        self.setColorView()
         self.setChanelName()
         self.setChanelTheme()
         self.setChanelDescription()
+    }
+    
+    private func setColorView(){
+        let idCurentUser = UserDefaults.standard.string(forKey: "id")
+        
+        guard let idUser = idCurentUser else {
+            return
+        }
+        
+        if model.idUser == Int(idUser) {
+            self.topChanelView.backgroundColor = UIColor.systemMint
+            self.chanelView.backgroundColor = UIColor.systemMint
+        } else {
+            self.topChanelView.backgroundColor = UIColor.systemCyan
+            self.chanelView.backgroundColor = UIColor.systemCyan
+        }
     }
     
     private func setChanelName(){

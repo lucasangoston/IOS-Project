@@ -47,6 +47,40 @@ class ChanelViewController: UIViewController, UITableViewDelegate, UITableViewDa
         return cell
     }
     
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        let chanel = chanels[indexPath.row]
+              
+        let idCurentUser = UserDefaults.standard.string(forKey: "id")
+        
+        guard let idUser = idCurentUser else {
+            return
+        }
+        
+        if Int(idUser) == chanel.idUser {
+            let alert = UIAlertController(title: "Suppression en cours...", message: "Voulez-vous vraiment supprimer le serveur \(chanel.chanelName) ?", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("Non", comment: "Default action"), style: .cancel, handler: nil ))
+            
+            alert.addAction(UIAlertAction(title: NSLocalizedString("Oui", comment: ""), style: .destructive, handler: { action in
+                self.chanelService.deleteChanel(idChanel: chanel.idChanel)
+                let alert = UIAlertController(title: "Suppression", message: "Le serveur à bien été supprimé.", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+                NSLog("The \"OK\" alert occured.")
+                }))
+                self.present(alert, animated: true, completion: nil)
+            }))
+            
+            self.present(alert, animated: true, completion: nil)
+            
+            
+        } else {
+            let alert = UIAlertController(title: "Heu..", message: "vous essayez de supprimer un serveur que vous n'avez pas créer... Essayez plutôt de supprimer les vôtres.", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
+            NSLog("The \"OK\" alert occured.")
+            }))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return chanels.count
     }
