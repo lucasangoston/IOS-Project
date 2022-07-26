@@ -77,7 +77,7 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
         if Int(idUser) == comment.idUser {
             self.commentService.deleteComment(idComment: comment.idComment)
         } else {
-            let alert = UIAlertController(title: "Heu..", message: "vous essayez de supprimer un commentaire que vous n'avez pas écris.. La liberté d'expression est importe sur ce serveur", preferredStyle: .alert)
+            let alert = UIAlertController(title: NSLocalizedString("chanelDetail.hi", comment: "Default action"), message: NSLocalizedString("chanelDetail.freedom", comment: "Default action"), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
             NSLog("The \"OK\" alert occured.")
             }))
@@ -109,7 +109,7 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
     }
 
     @IBAction func getDescription(){
-        let alert = UIAlertController(title: "Description", message: chanel.description, preferredStyle: .alert)
+        let alert = UIAlertController(title: NSLocalizedString("chanelDetail.title", comment: "Default action"), message: chanel.description, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
         NSLog("The \"OK\" alert occured.")
         }))
@@ -123,7 +123,7 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
         
         if self.isJoined {
             if content.isEmpty || self.contentComment.textColor == UIColor.lightGray {
-                    let alert = UIAlertController(title: "Vous n'avez pas de contenu à partager", message: "Raconter ce qui vous passe par la tête !", preferredStyle: .alert)
+                    let alert = UIAlertController(title: NSLocalizedString("chanelDetail.nocontent", comment: "Default action"), message: NSLocalizedString("chanelDetail.tell", comment: ""), preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                     NSLog("The \"OK\" alert occured.")
                     }))
@@ -138,7 +138,7 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
             guard let username = usernameCurentUser else {
                 return
             }
-            let alert = UIAlertController(title: "Salut \(username) !", message: "Tu dois d'abord rejoindre le serveur si tu souhaite partager avec la communauté.", preferredStyle: .alert)
+            let alert = UIAlertController(title: "Hey \(username) !", message: NSLocalizedString("chanelDetail.joinFirst", comment: ""), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
             NSLog("The \"OK\" alert occured.")
             }))

@@ -30,7 +30,7 @@ class CreateChanelViewController: UIViewController {
     @IBAction func handleSubmitChanelButton(){
         chanelService.createChanel(chanelName: chanelNameTextField.text!, chanelDescription: chanelDescriptionTextField.text!, chanelTheme: chanelThemeTextField.text!)
         
-        let alert = UIAlertController(title: "Félicitations !", message: "Votre chanel à bien été créé", preferredStyle: .alert)
+        let alert = UIAlertController(title: NSLocalizedString("createChanel.title", comment: "Default action"), message: NSLocalizedString("createChanel.message", comment: "Default action"), preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
         NSLog("The \"OK\" alert occured.")
         }))

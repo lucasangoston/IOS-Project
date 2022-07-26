@@ -42,7 +42,7 @@ class LoginViewController: UIViewController {
             
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
         } else {
-            let alert = UIAlertController(title: "Identifiants Incorrects", message: "Veuillez essayez de nouveau", preferredStyle: .alert)
+            let alert = UIAlertController(title: NSLocalizedString("login.alert.title", comment: ""), message: NSLocalizedString("login.alert.message", comment: ""), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
             NSLog("The \"OK\" alert occured.")
             }))
