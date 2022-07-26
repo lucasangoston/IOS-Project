@@ -1,0 +1,35 @@
+/*
+  Localizable.strings
+  Ratp
+
+  Created by Kong on 6/11/22.
+
+*/
+// loginView
+"login.title" = "登录";
+"login.form.email.placeholder" = "邮件";
+"login.form.password.placeholder" = "密码";
+"login.form.login.button" = "登录";
+"login.register.button" = "还没有账号?";
+
+
+"login.form.alert.title" = "无效的表格";
+"login.form.alert.close" = "关闭";
+"login.form.alert.invalid" = "各个领域都需要";
+"login.form.alert.invalid.email" = "登录名必须至少包含 4 个字符";
+"login.form.alert.invalid.password" = "密码必须至少包含 6 个字符";
+
+// registerView
+"register.title" = "注册";
+"register.form.name.placeholder" = "姓名";
+"register.form.email.placeholder" = "邮箱";
+"register.form.password.placeholder" = "密码";
+"register.button" = "注册";
+"register.button.login" = "还没有账号?";
+
+//SearchView
+"search.title" = "搜索";
+
+//ChanelDetailView
+"chanelDetail.join" = "加入";
+"chanelDetail.joined" = "已加入";
