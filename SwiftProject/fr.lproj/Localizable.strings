@@ -1,0 +1,68 @@
+/* 
+  Localizable.strings
+  Ratp
+
+  Created by Kong on 6/11/22.
+  
+*/
+// loginView
+"login.title" = "Connexion";
+"login.form.email.placeholder" = "Mail";
+"login.form.password.placeholder" = "Mot de passe";
+"login.form.login.button" = "Connexion";
+"login.register.button" = "Vous n'avez pas de compte ?";
+"login.alert.title" = "Identifiants Incorrects";
+"login.alert.message" = "Veuillez essayez de nouveau";
+
+"login.form.alert.title" = "Forme non valide";
+"login.form.alert.close" = "Fermer";
+"login.form.alert.invalid" = "Tous les champs sont requis";
+"login.form.alert.invalid.email" = "Le login doit contenir au moins 4 caractères";
+"login.form.alert.invalid.password" = "Le mot de passe doit contenir au moins 6 caractères";
+
+// registerView
+"register.title" = "Inscription";
+"register.form.name.placeholder" = "Nom";
+"register.form.email.placeholder" = "Mail";
+"register.form.password.placeholder" = "Mot de passe";
+"register.button" = "Inscription";
+"register.button.login" = "Déjà un compte ?";
+"register.alert.title" = "Inscription Réussie !";
+"register.alert.message" = "Vous n'avez plus qu'à vous connecter.";
+"register.alert.email" = "Mauvais format Email";
+"register.alert.email.message" = "Votre email n'a pas le bon format souhaité. (exemple@test.com).";
+"register.alert.password" = "Votre mot de passe est trop court";
+"register.alert.password.message" = "Votre mot de passe à besoin d'au moins 8 caractères.";
+"register.alert.email.exist" = "Ce mail existe déjà";
+"register.alert.email.exist.message" = "Essayez de vous connectez plutôt.";
+
+
+//SearchView
+"search.title" = "Rechercher";
+
+//ChanelDetailView
+"chanelDetail.join" = "Rejoindre";
+"chanelDetail.joined" = "Rejoin(t)";
+"chanelDetail.hi" = "Heu..";
+"chanelDetail.freedom" = "You are trying to delete a comment that you did not write. Freedom of expression is important on this server";
+"chanelDetail.title"  = "Description";
+"chanelDetail.nocontent"  = "Vous n'avez pas de contenu à partager";
+"chanelDetail.tell"  = "Raconter ce qui vous passe par la tête !";
+"chanelDetail.joinFirst" = "Tu dois d'abord rejoindre le serveur si tu souhaite partager avec la communauté.";
+
+//ChanelView
+"chanelView.s" = "Suppression en cours...";
+"chanelView.message" = "Voulez-vous vraiment supprimer le serveur ?";
+"chanelView.message2" = "Le serveur à bien été supprimé.";
+"chanelView.message3" = "vous essayez de supprimer un serveur que vous n'avez pas créer... Essayez plutôt de supprimer les vôtres.";
+"Non" = "Non";
+"Oui" = "Oui";
+
+//ProfileViewController
+"profileViewController.alert.title" = "Déconnection";
+"profileViewController.alert.message" = "Voulez-vous être déconnecté ?";
+
+
+//CreateChanelViewController
+"createChanel.title" = "Félicitations !";
+"createChanel.message" = "Votre chanel à bien été créé";

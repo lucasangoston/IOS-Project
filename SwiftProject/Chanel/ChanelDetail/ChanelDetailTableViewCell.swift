@@ -56,8 +56,9 @@ class ChanelDetailTableViewCell: UITableViewCell {
             self.headerComment.backgroundColor = UIColor.systemGreen
             self.comment.backgroundColor = UIColor.systemGreen
         } else {
-            self.headerComment.backgroundColor = UIColor.systemGray2
-            self.comment.backgroundColor = UIColor.systemGray2
+            self.headerComment.backgroundColor = UIColor.systemGray3
+            self.comment.backgroundColor = UIColor.systemGray3
+            
         }
     }
     
@@ -73,6 +74,7 @@ class ChanelDetailTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        self.selectionStyle = .none
 
         // Configure the view for the selected state
     }

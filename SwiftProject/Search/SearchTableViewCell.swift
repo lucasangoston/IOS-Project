@@ -43,6 +43,9 @@ class SearchTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
+        self.selectionStyle = .none
+        self.animeImage.layer.masksToBounds = true
+        self.animeImage.layer.cornerRadius = self.animeImage.frame.width/7.0
 
         // Configure the view for the selected state
     }

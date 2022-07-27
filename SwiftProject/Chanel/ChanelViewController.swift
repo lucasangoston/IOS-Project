@@ -81,12 +81,12 @@ class ChanelViewController: UIViewController, UITableViewDelegate, UITableViewDa
         }
         
         if Int(idUser) == chanel.idUser {
-            let alert = UIAlertController(title: "Suppression en cours...", message: "Voulez-vous vraiment supprimer le serveur \(chanel.chanelName) ?", preferredStyle: .alert)
+            let alert = UIAlertController(title: NSLocalizedString("chanelView.s", comment: "Default action"), message: NSLocalizedString("chanelView.message", comment: ""), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("Non", comment: "Default action"), style: .cancel, handler: nil ))
             
             alert.addAction(UIAlertAction(title: NSLocalizedString("Oui", comment: ""), style: .destructive, handler: { action in
                 self.chanelService.deleteChanel(idChanel: chanel.idChanel)
-                let alert = UIAlertController(title: "Suppression", message: "Le serveur à bien été supprimé.", preferredStyle: .alert)
+                let alert = UIAlertController(title: "Suppression", message: NSLocalizedString("chanelView.message2", comment: ""), preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                 NSLog("The \"OK\" alert occured.")
                 }))
@@ -97,7 +97,7 @@ class ChanelViewController: UIViewController, UITableViewDelegate, UITableViewDa
             
             
         } else {
-            let alert = UIAlertController(title: "Heu..", message: "vous essayez de supprimer un serveur que vous n'avez pas créer... Essayez plutôt de supprimer les vôtres.", preferredStyle: .alert)
+            let alert = UIAlertController(title: NSLocalizedString("Oui", comment: ""), message: NSLocalizedString("chanelView.message3", comment: ""), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
             NSLog("The \"OK\" alert occured.")
             }))

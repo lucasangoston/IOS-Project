@@ -18,6 +18,10 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = NSLocalizedString("login.title", comment: "")
+        self.mail.placeholder = NSLocalizedString("login.form.email.placeholder", comment: "")
+        self.password.placeholder = NSLocalizedString("login.form.password.placeholder", comment: "")
+        self.login.setTitle(NSLocalizedString("login.form.login.button", comment: ""), for: .normal)
 
         login.isEnabled = false;
         let textfields : [UITextField] = [mail, password]
@@ -38,7 +42,7 @@ class LoginViewController: UIViewController {
             
             (UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate)?.changeRootViewController(mainTabBarController)
         } else {
-            let alert = UIAlertController(title: "Identifiants Incorrects", message: "Veuillez essayez de nouveau", preferredStyle: .alert)
+            let alert = UIAlertController(title: NSLocalizedString("login.alert.title", comment: ""), message: NSLocalizedString("login.alert.message", comment: ""), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
             NSLog("The \"OK\" alert occured.")
             }))

@@ -87,7 +87,7 @@ class ProfileViewController: UIViewController, UITableViewDelegate, UITableViewD
     }
     
     @IBAction func logOutUser() {
-        let alert = UIAlertController(title: "Déconnection", message: "Voulez-vous être déconnecté ?", preferredStyle: .alert)
+        let alert = UIAlertController(title:NSLocalizedString("profileViewController.alert.title", comment: ""), message:NSLocalizedString("profileViewController.alert.message", comment: ""), preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("Non", comment: "Default action"), style: .cancel, handler: nil ))
         
         alert.addAction(UIAlertAction(title: NSLocalizedString("Oui", comment: ""), style: .destructive, handler: self.handleLogOut))

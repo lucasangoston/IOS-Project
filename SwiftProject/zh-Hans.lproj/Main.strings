@@ -1,0 +1,87 @@
+
+/* Class = "UILabel"; text = "Anime "; ObjectID = "09X-hE-kOw"; */
+"09X-hE-kOw.text" = "动漫 ";
+
+/* Class = "UINavigationItem"; title = "Mes Favoris"; ObjectID = "0Sw-0y-K0T"; */
+"0Sw-0y-K0T.title" = "我的最爱";
+
+/* Class = "UIButton"; configuration.title = "Inscription"; ObjectID = "331-tX-Vg4"; */
+"331-tX-Vg4.configuration.title" = "注册";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "331-tX-Vg4"; */
+"331-tX-Vg4.normalTitle" = "按钮";
+
+/* Class = "UILabel"; text = "Network"; ObjectID = "4IS-oJ-fhH"; */
+"4IS-oJ-fhH.text" = "网络";
+
+/* Class = "UILabel"; text = "Mot de passe"; ObjectID = "B7p-cQ-Koz"; */
+"B7p-cQ-Koz.text" = "密码";
+
+/* Class = "UILabel"; text = "name user"; ObjectID = "BXl-ho-70c"; */
+"BXl-ho-70c.text" = "用户名";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Cj2-yH-dBz"; */
+"Cj2-yH-dBz.normalTitle" = "按钮";
+
+/* Class = "UIButton"; configuration.title = "Vous n'avez pas encore de compte ?"; ObjectID = "DBM-d2-iUR"; */
+"DBM-d2-iUR.configuration.title" = "还没有帐户 ？";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DBM-d2-iUR"; */
+"DBM-d2-iUR.normalTitle" = "按钮";
+
+/* Class = "UINavigationItem"; title = "Profil"; ObjectID = "EBP-DA-m1M"; */
+"EBP-DA-m1M.title" = "个人信息";
+
+/* Class = "UITabBarItem"; title = "Communauté"; ObjectID = "NUe-XA-sxD"; */
+"NUe-XA-sxD.title" = "社区";
+
+/* Class = "UITabBarItem"; title = "Profil"; ObjectID = "NwM-D7-7A5"; */
+"NwM-D7-7A5.title" = "个人信息";
+
+/* Class = "UITabBarItem"; title = "Favoris"; ObjectID = "Q4l-kI-aRh"; */
+"Q4l-kI-aRh.title" = "最爱";
+
+/* Class = "UILabel"; text = "Network"; ObjectID = "QBh-RP-0Z8"; */
+"QBh-RP-0Z8.text" = "网络";
+
+/* Class = "UILabel"; text = "Communautés :"; ObjectID = "QbR-CM-4aG"; */
+"QbR-CM-4aG.text" = "社区";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "U7F-gg-QL7"; */
+"U7F-gg-QL7.text" = "邮箱";
+
+/* Class = "UILabel"; text = "Pseudonyme"; ObjectID = "WSm-Ea-n6U"; */
+"WSm-Ea-n6U.text" = "名字";
+
+/* Class = "UILabel"; text = "Email"; ObjectID = "ZE9-rg-JIL"; */
+"ZE9-rg-JIL.text" = "邮箱";
+
+/* Class = "UILabel"; text = "Anime "; ObjectID = "awA-w6-VZr"; */
+"awA-w6-VZr.text" = "动漫 ";
+
+/* Class = "UITabBarItem"; title = "Rechercher"; ObjectID = "lh2-hD-mPZ"; */
+"lh2-hD-mPZ.title" = "搜索";
+
+/* Class = "UILabel"; text = "Mes communautés :"; ObjectID = "lyv-hi-J02"; */
+"lyv-hi-J02.text" = "我的社区";
+
+/* Class = "UIButton"; configuration.title = "Vous avez déjà un compte ?"; ObjectID = "oQf-Hc-zd5"; */
+"oQf-Hc-zd5.configuration.title" = "已经有一个帐户？";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "oQf-Hc-zd5"; */
+"oQf-Hc-zd5.normalTitle" = "按钮";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "s3K-kq-OXJ"; */
+"s3K-kq-OXJ.normalTitle" = "按钮";
+
+/* Class = "UILabel"; text = "Mot de passe"; ObjectID = "szY-JN-w2K"; */
+"szY-JN-w2K.text" = "密码";
+
+/* Class = "UINavigationItem"; title = "Rechercher"; ObjectID = "uFo-Sq-82O"; */
+"uFo-Sq-82O.title" = "搜索";
+
+/* Class = "UIButton"; configuration.title = "Connection"; ObjectID = "zds-am-S4I"; */
+"zds-am-S4I.configuration.title" = "链接";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "zds-am-S4I"; */
+"zds-am-S4I.normalTitle" = "按钮";

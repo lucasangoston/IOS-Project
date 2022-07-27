@@ -30,22 +30,22 @@
                             <rect key="frame" x="0.0" y="0.0" width="414" height="900"/>
                             <subviews>
                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="uWz-tP-Zgw">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="128"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="168"/>
                                 </imageView>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1j-BL-c0Y">
-                                    <rect key="frame" x="183" y="250" width="48.5" height="26"/>
-                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="19"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m1j-BL-c0Y">
+                                    <rect key="frame" x="182" y="250" width="50" height="26"/>
+                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9K-CN-reu">
-                                    <rect key="frame" x="10" y="383" width="394" height="21"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="7" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V9K-CN-reu">
+                                    <rect key="frame" x="25" y="383" width="364" height="21"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axo-MN-8A0">
-                                    <rect key="frame" x="338.5" y="161" width="45.5" height="31"/>
+                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="axo-MN-8A0">
+                                    <rect key="frame" x="338" y="168" width="45.5" height="31"/>
                                     <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="plain" image="heart.fill" catalog="system" title=""/>
@@ -57,14 +57,14 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="900" id="3dT-c8-TTN"/>
-                                <constraint firstItem="V9K-CN-reu" firstAttribute="leading" secondItem="aSS-dG-SGP" secondAttribute="leading" constant="10" id="EZZ-RW-YZJ"/>
+                                <constraint firstItem="V9K-CN-reu" firstAttribute="leading" secondItem="aSS-dG-SGP" secondAttribute="leading" constant="25" id="EZZ-RW-YZJ"/>
                                 <constraint firstItem="axo-MN-8A0" firstAttribute="top" secondItem="uWz-tP-Zgw" secondAttribute="bottom" constant="20" id="JMu-GY-NRi"/>
                                 <constraint firstItem="V9K-CN-reu" firstAttribute="top" secondItem="m1j-BL-c0Y" secondAttribute="bottom" constant="30" id="SBT-zM-y1g"/>
-                                <constraint firstItem="m1j-BL-c0Y" firstAttribute="top" secondItem="axo-MN-8A0" secondAttribute="bottom" constant="25" id="bYJ-hz-MfA"/>
+                                <constraint firstItem="m1j-BL-c0Y" firstAttribute="top" secondItem="axo-MN-8A0" secondAttribute="bottom" constant="1" id="bYJ-hz-MfA"/>
                                 <constraint firstAttribute="trailing" secondItem="uWz-tP-Zgw" secondAttribute="trailing" id="hut-oE-Wyp"/>
                                 <constraint firstItem="uWz-tP-Zgw" firstAttribute="top" secondItem="aSS-dG-SGP" secondAttribute="top" id="jjZ-ui-hQm"/>
                                 <constraint firstAttribute="trailing" secondItem="axo-MN-8A0" secondAttribute="trailing" constant="30" id="mMw-3S-edJ"/>
-                                <constraint firstAttribute="trailing" secondItem="V9K-CN-reu" secondAttribute="trailing" constant="10" id="tkG-yI-vnc"/>
+                                <constraint firstAttribute="trailing" secondItem="V9K-CN-reu" secondAttribute="trailing" constant="25" id="tkG-yI-vnc"/>
                                 <constraint firstItem="uWz-tP-Zgw" firstAttribute="leading" secondItem="aSS-dG-SGP" secondAttribute="leading" id="xyf-hC-3kG"/>
                                 <constraint firstItem="m1j-BL-c0Y" firstAttribute="centerX" secondItem="aSS-dG-SGP" secondAttribute="centerX" id="yHy-7L-mT4"/>
                             </constraints>

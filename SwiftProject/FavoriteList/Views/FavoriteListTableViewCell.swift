@@ -29,7 +29,10 @@ class FavoriteListTableViewCell: UITableViewCell {
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        self.selectionStyle = .none
+        self.animePicture.layer.masksToBounds = true
+        self.animePicture.layer.cornerRadius = self.animePicture.frame.width/7.0
+    
         // Configure the view for the selected state
     }
     

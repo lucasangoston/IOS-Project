@@ -50,28 +50,28 @@ class RegisterViewController: UIViewController {
             if(password.count >= 8){
                 if(self.isValidEmail(mail)){
                     self.registerService.register(username: username, mail: mail, password: password)
-                    let alert = UIAlertController(title: "Inscription Réussie !", message: "Vous n'avez plus qu'à vous connecter.", preferredStyle: .alert)
+                    let alert = UIAlertController(title:NSLocalizedString("register.alert.title", comment: ""), message:NSLocalizedString("register.alert.message", comment: ""), preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: NSLocalizedString("Super", comment: "Default action"), style: .default, handler: { _ in
                     NSLog("The \"OK\" alert occured.")
                     }))
                     self.present(alert, animated: true, completion: nil)
                 }
                 else {
-                    let alert = UIAlertController(title: "Mauvais format Email", message: "Votre email n'a pas le bon format souhaité. (exemple@test.com).", preferredStyle: .alert)
+                    let alert = UIAlertController(title: NSLocalizedString("register.alert.email", comment: ""), message:NSLocalizedString("register.alert.email.message", comment: ""), preferredStyle: .alert)
                     alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                     NSLog("The \"OK\" alert occured.")
                     }))
                     self.present(alert, animated: true, completion: nil)
                 }
             } else {
-                let alert = UIAlertController(title: "Votre mot de passe est trop court", message: "Votre mot de passe à besoin d'au moins 8 caractères.", preferredStyle: .alert)
+                let alert = UIAlertController(title: NSLocalizedString("register.alert.password", comment: ""), message:NSLocalizedString("register.alert.password.message", comment: ""), preferredStyle: .alert)
                 alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
                 NSLog("The \"OK\" alert occured.")
                 }))
                 self.present(alert, animated: true, completion: nil)
             }
         } else {
-            let alert = UIAlertController(title: "Ce mail existe déjà", message: "Essayez de vous connectez plutôt.", preferredStyle: .alert)
+            let alert = UIAlertController(title: NSLocalizedString("register.alert.email.exist", comment: ""), message:NSLocalizedString("register.alert.email.exist.message", comment: ""), preferredStyle: .alert)
             alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: { _ in
             NSLog("The \"OK\" alert occured.")
             }))

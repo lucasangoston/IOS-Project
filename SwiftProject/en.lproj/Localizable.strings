@@ -1,0 +1,69 @@
+/* 
+  Localizable.strings
+  Ratp
+
+  Created by Kong on 6/11/22.
+  
+*/
+// loginView
+"login.title" = "Login";
+"login.form.email.placeholder" = "Email";
+"login.form.password.placeholder" = "Password";
+"login.form.login.button" = "Login";
+"login.register.button" = "Doesn't have an account ?";
+"login.alert.title" = "Identifiants Incorrects";
+"login.alert.message" = "Identifiants Incorrects";
+
+
+
+"login.form.alert.title" = "Invalid form";
+"login.form.alert.close" = "Close";
+"login.form.alert.invalid" = "All fields are required";
+"login.form.alert.invalid.email" = "The login must contains at least 4 characters";
+"login.form.alert.invalid.password" = "The password must contains at least 6 characters";
+
+// registerView
+"register.title" = "Register";
+"register.form.name.placeholder" = "Name";
+"register.form.email.placeholder" = "Email";
+"register.form.password.placeholder" = "Password";
+"register.button" = "Register";
+"register.button.login" = "Already an account ?";
+"register.alert.title" = "Successful registration !";
+"register.alert.message" = "All you have to do is log in.";
+"register.alert.email" = "Wrong email format";
+"register.alert.email.message" = "Your email does not have the correct format. (example@test.com).";
+"register.alert.password" = "Your password is too short";
+"register.alert.password.message" = "Your password needs at least 8 characters.";
+"register.alert.email.exist" = "This email already exists";
+"register.alert.email.exist.message" = "Try logging in instead.";
+
+
+//SearchView
+"search.title" = "Search";
+
+//ChanelDetailView
+"chanelDetail.join" = "Join";
+"chanelDetail.joined" = "Joined";
+"chanelDetail.hi" = "Hey...";
+"chanelDetail.freedom" = "You are trying to delete a comment that you did not write. Freedom of expression is important on this server";
+"chanelDetail.title" = "Description";
+"chanelDetail.nocontent" = "You have no content to share";
+"chanelDetail.tell"  = "Tell what goes through your head!";
+"chanelDetail.joinFirst" = "You must first join the server if you want to share with the community.";
+
+//ChanelView
+"chanelView.s" = "Deleting...";
+"chanelView.message" = "Are you sure you want to delete the server ?";
+"chanelView.message2" = "The server has been successfully deleted.";
+"chanelView.message3" = "You are trying to delete a server that you did not create...Try deleting your own instead.";
+"Non" = "No";
+"Oui" = "Yes";
+
+//ProfileViewController
+"profileViewController.alert.title" = "Log out";
+"profileViewController.alert.message" = "Do you want to be logged out?";
+
+//CreateChanelViewController
+"createChanel.title" = "Congratulation !";
+"createChanel.message" = "Your chanel has been created";
