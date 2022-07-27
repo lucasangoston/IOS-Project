@@ -34,6 +34,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
         self.title = NSLocalizedString("search.title", comment: "")
         self.searchTableView.register(SearchTableViewCell.nib(), forCellReuseIdentifier: SearchTableViewCell.identifier)
         
@@ -83,8 +85,8 @@ class SearchViewController: UIViewController, UITableViewDelegate, UITableViewDa
         let idFavorite = getIdFavorite(favorites: self.favorites, idAnime: animes[indexPath.row].id)
         
         cell.idFavorite = idFavorite
-        cell.configure(with: animes[indexPath.row], isFavorite: isFavorite)
         
+        cell.configure(with: animes[indexPath.row], isFavorite: isFavorite)
         
         return cell
     }

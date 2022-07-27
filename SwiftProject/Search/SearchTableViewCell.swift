@@ -12,6 +12,8 @@ class SearchTableViewCell: UITableViewCell {
     @IBOutlet weak var animeImage: UIImageView!
     @IBOutlet weak var animeTitle: UILabel!
     @IBOutlet weak var animeFavorite: UIButton!
+    @IBOutlet weak var animeDate: UILabel!
+    @IBOutlet weak var animeDescription: UILabel!
     
     var isFavorite: Bool!
     var favoriteService: FavoriteService = FavoriteWebService()
@@ -35,6 +37,8 @@ class SearchTableViewCell: UITableViewCell {
         
         self.setTitleAnime()
         self.setFavoriteButton()
+        self.setDateAnime()
+        self.setDescriptionAnime()
         
         let animeImageEncoded = setImageAnime(animeImageString: model.attributes.posterImage.original)
         
@@ -46,8 +50,6 @@ class SearchTableViewCell: UITableViewCell {
         self.selectionStyle = .none
         self.animeImage.layer.masksToBounds = true
         self.animeImage.layer.cornerRadius = self.animeImage.frame.width/7.0
-
-        // Configure the view for the selected state
     }
     
     @IBAction func handleFavorite(){
@@ -65,6 +67,19 @@ class SearchTableViewCell: UITableViewCell {
     private func setTitleAnime(){
         self.animeTitle.text = model.attributes.canonicalTitle
         self.animeTitle.numberOfLines = 0
+    }
+    
+    private func setDescriptionAnime(){
+        self.animeDescription.text = self.truncateString(text: model.attributes.description)
+        self.animeDescription.numberOfLines = 0
+    }
+
+    private func truncateString(text: String) -> String{
+            return (text.count > 100) ? text.prefix(100) + "..." : text
+    }
+    
+    private func setDateAnime(){
+        self.animeDate.text = model.attributes.startDate
     }
     
     private func setImageAnime(animeImageString: String) -> UIImage{

@@ -75,8 +75,7 @@ class FavoriteListViewController: UIViewController, UITableViewDelegate, UITable
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
         let animeTitle = favoriteList[indexPath.row].attributes.canonicalTitle
         
-        
-        print(favorites)
+        let idFavorite = self.getIdFavorite(favorites: self.favorites, idAnime: self.favoriteList[indexPath.row].id)
         
         if editingStyle == .delete {
           let alert = UIAlertController(title: "Suppression", message: "Voulez-vous vraiment supprimé \(animeTitle) de votre liste ?", preferredStyle: .alert)
@@ -85,7 +84,7 @@ class FavoriteListViewController: UIViewController, UITableViewDelegate, UITable
           alert.addAction(UIAlertAction(title: NSLocalizedString("Oui", comment: ""), style: .destructive, handler: { action in
               
               
-              self.favoriteService.deleteFavorite(idFavorite: 1)
+              self.favoriteService.deleteFavorite(idFavorite: idFavorite)
           }))
           
           self.present(alert, animated: true, completion: nil)
@@ -118,7 +117,6 @@ class FavoriteListViewController: UIViewController, UITableViewDelegate, UITable
     
     func getIdFavorite(favorites: [Favorite], idAnime: String) -> Int {
         let idCurentUser = UserDefaults.standard.string(forKey: "id")
-        
         
         guard let idUser = idCurentUser else {
             return 0
