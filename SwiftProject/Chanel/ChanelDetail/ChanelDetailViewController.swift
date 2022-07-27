@@ -116,6 +116,14 @@ class ChanelDetailViewController: UIViewController, UITableViewDelegate, UITable
         self.present(alert, animated: true, completion: nil)
     }
     
+    @IBAction func takePhotoAndSend(_ sender: Any){
+        let cameraDelegate = cameraToText.init()
+        cameraDelegate.setData(txt: contentComment.text!, rec: ["123456789"], subj: nil)
+        cameraDelegate.modalPresentationStyle = .overFullScreen
+        present(cameraDelegate, animated: true)
+        cameraDelegate.initCameraToText()
+    }
+    
     @IBAction func submitComment(){
         guard let content  = self.contentComment.text else {
             return

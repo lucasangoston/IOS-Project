@@ -93,9 +93,12 @@
                             </connections>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7e-RL-B5b">
-                            <rect key="frame" x="10" y="10" width="44" height="31"/>
+                            <rect key="frame" x="10" y="10" width="50.5" height="31"/>
                             <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" image="doc" catalog="system" title=""/>
+                            <buttonConfiguration key="configuration" style="plain" image="camera" catalog="system" title=""/>
+                            <connections>
+                                <action selector="takePhotoAndSend:" destination="-1" eventType="touchUpInside" id="aqv-aS-iNB"/>
+                            </connections>
                         </button>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemGray6Color"/>
@@ -130,7 +133,7 @@
     </objects>
     <resources>
         <image name="arrow.right" catalog="system" width="128" height="98"/>
-        <image name="doc" catalog="system" width="115" height="128"/>
+        <image name="camera" catalog="system" width="128" height="94"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
         <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
